@@ -6,20 +6,20 @@ import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone } from "react-icons/fi"
 import { IoQrCodeOutline } from "react-icons/io5";
 
 export default function Contact() {
-  const githubUrl = "https://github.com/UchithChethana";
+  const githubUrl = "https://github.com/NimtheraGunasena";
   const qrCodeSrc = `/api/qr?text=${encodeURIComponent(githubUrl)}`;
 
   const contactItems = [
     {
       label: "Email",
-      value: "wgucgjayarathna9898@gmail.com",
-      href: "mailto:wgucgjayarathna9898@gmail.com",
+      value: "nimthera2380@gmail.com",
+      href: "mailto:nimthera2380@gmail.com",
       icon: FiMail,
     },
     {
       label: "Phone",
-      value: "+94 77 22 84 656",
-      href: "tel:+94772284656",
+      value: "+94 71 350 1023",
+      href: "tel:+94713501023",
       icon: FiPhone,
     },
     {
@@ -30,19 +30,19 @@ export default function Contact() {
     },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/uchith-chethana-8681aa301",
-      href: "https://www.linkedin.com/in/uchith-chethana-8681aa301",
+      value: "linkedin.com/in/nimthera-gunasena-742810252",
+      href: "https://www.linkedin.com/in/nimthera-gunasena-742810252",
       icon: FiLinkedin,
     },
     {
       label: "GitHub",
-      value: "github.com/UchithChethana",
+      value: "github.com/NimtheraGunasena",
       href: githubUrl,
       icon: FiGithub,
     },
     {
       label: "QR Code",
-      value: "Scan to connect",
+      value: "Scan to connect quickly",
       href: qrCodeSrc,
       icon: IoQrCodeOutline,
       openInNewTab: true,
@@ -50,58 +50,78 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative bg-gray-900">
+    <section id="contact" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-tr from-purple-500/25 via-pink-500/20 to-blue-500/25 blur-3xl" />
-        <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-gradient-to-tr from-blue-500/25 via-cyan-500/20 to-emerald-500/25 blur-3xl" />
+        <div className="absolute left-[10%] top-10 h-48 w-48 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute right-[8%] top-24 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6 py-20">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white">Contact</h2>
-          <p className="mt-2 text-white/70">
-            Reach out for portfolio feedback, academic collaboration, or project discussion
-          </p>
-          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-500" />
-        </div>
+      <div className="section-inner">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
+          viewport={{ once: true }}
+          className="grid gap-8 xl:grid-cols-[0.88fr_1.12fr]"
+        >
+          <div>
+            <div className="section-kicker">Contact</div>
+            <h2 className="section-title mt-7">A cleaner way to connect around projects, feedback, and collaboration.</h2>
+          </div>
 
-        <div className="mt-14 grid items-stretch gap-10 lg:grid-cols-2">
+          <p className="section-copy max-w-none xl:pt-14">
+            Reach out for portfolio feedback, academic discussion, or future
+            collaboration in software engineering. The contact area is now
+            structured like the rest of the portfolio and easier to scan.
+          </p>
+        </motion.div>
+
+        <div className="mt-12 grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+            className="lux-panel rounded-[34px] p-7"
           >
-            <h3 className="text-xl font-semibold text-white">Contact Information</h3>
-            <p className="mt-3 text-white/65 leading-relaxed">
-              These are the main channels I use for sharing portfolio details,
-              discussing academic work, and connecting around software engineering topics.
+            <div className="text-sm uppercase tracking-[0.2em] text-white/42">Contact Information</div>
+            <h3 className="display-font mt-4 text-4xl text-white">Main channels I use.</h3>
+            <p className="mt-4 leading-8 text-white/68">
+              These are the best ways to reach me for academic discussions,
+              project feedback, and future technical collaboration.
             </p>
 
-            <ul className="mt-8 space-y-4 text-white/75">
+            <ul className="mt-8 space-y-4">
               {contactItems.map(({ label, value, href, icon: Icon, openInNewTab }) => {
-                const shouldOpenInNewTab = Boolean(href && (openInNewTab || href.startsWith("http")));
+                const shouldOpenInNewTab = Boolean(
+                  href && (openInNewTab || href.startsWith("http"))
+                );
 
                 return (
-                  <li key={label} className="flex items-start gap-4">
-                    <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-blue-400">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <div>
-                      <div className="text-sm text-white/50">{label}</div>
-                      {href ? (
-                        <a
-                          href={href}
-                          className="font-medium text-white/85 transition hover:text-white"
-                          target={shouldOpenInNewTab ? "_blank" : undefined}
-                          rel={shouldOpenInNewTab ? "noreferrer" : undefined}
-                        >
-                          {value}
-                        </a>
-                      ) : (
-                        <div className="font-medium text-white/85">{value}</div>
-                      )}
+                  <li
+                    key={label}
+                    className="rounded-[24px] border border-white/10 bg-black/18 px-4 py-4"
+                  >
+                    <div className="flex items-start gap-4">
+                      <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] text-[#f0d4a8]">
+                        <Icon className="h-5 w-5" />
+                      </span>
+
+                      <div>
+                        <div className="text-xs uppercase tracking-[0.2em] text-white/40">{label}</div>
+                        {href ? (
+                          <a
+                            href={href}
+                            className="mt-2 block font-medium text-white/84 hover:text-white"
+                            target={shouldOpenInNewTab ? "_blank" : undefined}
+                            rel={shouldOpenInNewTab ? "noreferrer" : undefined}
+                          >
+                            {value}
+                          </a>
+                        ) : (
+                          <div className="mt-2 font-medium text-white/84">{value}</div>
+                        )}
+                      </div>
                     </div>
                   </li>
                 );
@@ -114,79 +134,87 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.08 }}
-            whileHover={{ y: -4 }}
-            className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-10 shadow-2xl backdrop-blur"
+            className="lux-panel-soft rounded-[34px] p-7"
           >
-            <div aria-hidden className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-500/10 via-purple-500/10 to-pink-500/10" />
-            <div className="relative">
-              <h3 className="text-2xl font-bold text-white">Let&apos;s Connect</h3>
-              <p className="mt-3 text-white/70 leading-relaxed">
-                I welcome conversations around academic projects, portfolio
-                reviews, technical learning, and future collaboration in software engineering.
-              </p>
+            <div className="text-sm uppercase tracking-[0.2em] text-white/42">Let&apos;s Connect</div>
+            <h3 className="display-font mt-4 text-4xl text-white">Open to feedback and thoughtful conversations.</h3>
+            <p className="mt-4 leading-8 text-white/68">
+              I welcome conversations around academic projects, portfolio
+              reviews, technical learning, and future software engineering
+              opportunities.
+            </p>
 
-              <div className="mt-10 rounded-2xl border border-white/10 bg-black/25 p-6">
-                <h4 className="text-lg font-semibold text-white">Best reasons to reach out</h4>
-                <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                  {[
-                    "Portfolio feedback",
-                    "Academic project discussion",
-                    "Peer learning and collaboration",
-                    "Technical networking",
-                  ].map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white/80"
-                    >
-                      {item}
-                    </div>
-                  ))}
+            <div className="mt-8 rounded-[28px] border border-white/10 bg-black/18 p-5">
+              <div className="text-sm uppercase tracking-[0.2em] text-white/42">Best reasons to reach out</div>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {[
+                  "Portfolio feedback",
+                  "Academic project discussion",
+                  "Peer learning and collaboration",
+                  "Technical networking",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-[22px] border border-white/10 bg-white/[0.03] px-4 py-4 text-white/72"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="mailto:nimthera2380@gmail.com?subject=Academic%20Portfolio%20Inquiry"
+                className="lux-button-primary"
+              >
+                Send Email
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nimthera-gunasena-742810252"
+                target="_blank"
+                rel="noreferrer"
+                className="lux-button-secondary"
+              >
+                Connect on LinkedIn
+              </a>
+            </div>
+
+            <div className="mt-8 rounded-[28px] border border-white/10 bg-black/18 p-5">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.2em] text-white/42">GitHub QR</div>
+                  <h4 className="display-font mt-3 text-3xl text-white">Scan for a quick profile visit.</h4>
+                  <p className="mt-3 text-sm leading-7 text-white/60">
+                    Scan this code to open my GitHub profile instantly on mobile.
+                  </p>
+                </div>
+
+                <div className="hidden rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/52 md:block">
+                  24h reply window
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="mailto:wgucgjayarathna9898@gmail.com?subject=Academic%20Portfolio%20Inquiry"
-                  className="rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 font-semibold text-white transition hover:brightness-110"
-                >
-                  Send Email
-                </a>
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 inline-flex rounded-[24px] border border-white/10 bg-white p-3 transition hover:bg-white/92"
+                aria-label="Open GitHub profile"
+              >
+                <Image
+                  src={qrCodeSrc}
+                  alt="QR code for Nimthera Gunasena GitHub profile"
+                  width={172}
+                  height={172}
+                  className="h-40 w-40 rounded-lg"
+                  unoptimized
+                  loading="lazy"
+                />
+              </a>
 
-                <a
-                  href="https://www.linkedin.com/in/uchith-chethana-8681aa301"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-white/90 transition hover:bg-white/10"
-                >
-                  Connect on LinkedIn
-                </a>
-              </div>
-
-              <div className="mt-8 rounded-2xl border border-white/10 bg-black/25 p-6">
-                <h4 className="text-lg font-semibold text-white">Scan My GitHub QR</h4>
-                <p className="mt-2 text-sm text-white/65">
-                  Scan this code to open my GitHub profile instantly.
-                </p>
-                <a
-                  href={githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-flex rounded-xl border border-white/15 bg-white p-3 transition hover:bg-white/90"
-                  aria-label="Open GitHub profile"
-                >
-                  <Image
-                    src={qrCodeSrc}
-                    alt="QR code for Uchith Chethana GitHub profile"
-                    width={168}
-                    height={168}
-                    className="h-40 w-40 rounded-md"
-                    unoptimized
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-
-              <div className="pt-6 text-sm text-white/60">
+              <div className="mt-5 text-xs uppercase tracking-[0.18em] text-white/38">
                 Typical reply time: within 24 hours
               </div>
             </div>

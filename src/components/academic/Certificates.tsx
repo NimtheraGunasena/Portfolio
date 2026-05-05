@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import {
   FiAward,
-  FiExternalLink,
-  FiX,
-  FiSearch,
   FiDownload,
+  FiExternalLink,
   FiFileText,
+  FiSearch,
+  FiX,
 } from "react-icons/fi";
 
 type Cert = {
@@ -19,7 +19,7 @@ type Cert = {
   type: "Technical" | "Soft Skill";
   skillImproved: string;
   proof: string;
-  file: string; // <-- can be .jpg/.png OR .pdf (in /public)
+  file: string;
   link?: string;
 };
 
@@ -55,47 +55,47 @@ export default function Certificates() {
       },
       {
         title: "Adobe Photoshop Advanced",
-        issuer: "PhotoShop",
+        issuer: "Photoshop",
         date: "2022",
         type: "Technical",
         skillImproved: "Image editing practice",
-        proof: "Improved hands-on programming and writing cleaner, reusable code.",
+        proof: "Expanded visual editing skills and improved creative presentation techniques.",
         file: "/certificates/cer1.jpeg",
       },
-       {
-        title: "Higher Deploma in Information Technology",
-        issuer: "Sliit",
+      {
+        title: "Higher Diploma in Information Technology",
+        issuer: "SLIIT",
         date: "2024",
         type: "Technical",
-        skillImproved: "Information Technology",
-        proof: "Improved hands-on programming and writing cleaner, reusable code.",
+        skillImproved: "Information technology foundations",
+        proof: "Built a stronger academic base across software, systems, and technical problem-solving.",
         file: "/certificates/cer4.jpeg",
       },
       {
         title: "CodeFest Competition",
-        issuer: "Sliit",
+        issuer: "SLIIT",
         date: "2025",
         type: "Technical",
-        skillImproved: "Information Technology",
-        proof: "Improved hands-on programming and writing cleaner, reusable code.",
+        skillImproved: "Practical software problem-solving",
+        proof: "Applied teamwork and competitive development skills in a live technical setting.",
         file: "/certificates/cer5.jpeg",
       },
       {
-        title: "Canvas app in Power Platform",
+        title: "Canvas App in Power Platform",
         issuer: "Microsoft",
         date: "2026",
         type: "Technical",
-        skillImproved: "Information Technology",
-        proof: "Improved hands-on programming and writing cleaner, reusable code.",
+        skillImproved: "Low-code application development",
+        proof: "Learned how to design and manage application workflows inside the Power Platform ecosystem.",
         file: "/certificates/cer6.jpeg",
       },
       {
-        title: "Manage Canvas app in Power Platform",
+        title: "Manage Canvas App in Power Platform",
         issuer: "Microsoft",
         date: "2026",
         type: "Technical",
-        skillImproved: "Information Technology",
-        proof: "Improved hands-on programming and writing cleaner, reusable code.",
+        skillImproved: "Application management",
+        proof: "Strengthened understanding of maintaining and organizing app experiences within Power Platform.",
         file: "/certificates/cer7.jpeg",
       },
     ],
@@ -103,236 +103,207 @@ export default function Certificates() {
   );
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return certs.filter((c) => {
-      const matchesType = activeType === "All" ? true : c.type === activeType;
-      const matchesQuery = !q
+    const normalizedQuery = query.trim().toLowerCase();
+
+    return certs.filter((cert) => {
+      const matchesType = activeType === "All" ? true : cert.type === activeType;
+      const matchesQuery = !normalizedQuery
         ? true
-        : `${c.title} ${c.issuer} ${c.skillImproved} ${c.proof} ${c.type}`
+        : `${cert.title} ${cert.issuer} ${cert.skillImproved} ${cert.proof} ${cert.type}`
             .toLowerCase()
-            .includes(q);
+            .includes(normalizedQuery);
+
       return matchesType && matchesQuery;
     });
   }, [certs, query, activeType]);
 
   return (
-    <section
-      id="certificates"
-      className="relative overflow-hidden bg-black py-24 px-6"
-    >
-      {/* glow */}
+    <section id="certificates" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-blue-600/15 blur-3xl" />
-        <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-emerald-500/10 blur-3xl" />
+        <div className="absolute left-[8%] top-20 h-52 w-52 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute right-[10%] top-10 h-56 w-56 rounded-full bg-[#d6b07c]/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
-        {/* Header */}
+      <div className="section-inner">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="grid gap-8 xl:grid-cols-[0.88fr_1.12fr]"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-600/30 bg-blue-600/10 px-4 py-2 text-blue-200">
-            <FiAward />
-            Certifications
+          <div>
+            <div className="section-kicker">
+              <FiAward />
+              Verified Learning
+            </div>
+            <h2 className="section-title mt-7">Certificates presented as stronger supporting evidence.</h2>
           </div>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-extrabold text-white">
-            Certificates <span className="text-blue-500">& Evidence</span>
-          </h2>
-
-          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-500" />
-
-          <p className="mt-6 text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Certificates obtained within the last year (technical/soft skills),
-            showing evidence of continuous learning and skill improvement.
+          <p className="section-copy max-w-none xl:pt-14">
+            These certificates show continued learning across programming,
+            academic development, and supporting technical tools. The new layout
+            makes it easier to browse, filter, and preview proof.
           </p>
         </motion.div>
 
-        {/* Controls */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+          className="lux-panel mt-12 rounded-[34px] p-5"
         >
-          {/* search */}
-          <div className="w-full md:w-[420px]">
+          <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
             <div className="relative">
-              <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
+              <FiSearch className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/34" />
               <input
                 value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search certificates (e.g., Python, Microsoft, Power Platform)..."
-                className="w-full rounded-xl bg-slate-900/40 border border-slate-800 pl-11 pr-10 py-3 text-slate-200 placeholder:text-slate-500 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition"
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Search certificates, issuers, or skills"
+                className="lux-input py-3 pl-11 pr-10"
               />
               {query ? (
                 <button
                   onClick={() => setQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200 transition"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/80"
                   aria-label="Clear search"
                   type="button"
                 >
-                  ✕
+                  x
                 </button>
               ) : null}
             </div>
-          </div>
 
-          {/* type pills */}
-          <div className="flex flex-wrap gap-2">
-            {(["All", "Technical", "Soft Skill"] as const).map((t) => {
-              const active = t === activeType;
-              return (
-                <button
-                  key={t}
-                  onClick={() => setActiveType(t)}
-                  type="button"
-                  className={[
-                    "rounded-full px-4 py-2 text-sm border transition",
-                    active
-                      ? "bg-blue-600/15 border-blue-600 text-blue-300"
-                      : "bg-slate-900/40 border-slate-800 text-slate-300 hover:border-blue-600 hover:text-blue-200",
-                  ].join(" ")}
-                >
-                  {t}
-                </button>
-              );
-            })}
+            <div className="flex flex-wrap gap-2">
+              {(["All", "Technical", "Soft Skill"] as const).map((type) => {
+                const active = type === activeType;
+                return (
+                  <button
+                    key={type}
+                    onClick={() => setActiveType(type)}
+                    className={`lux-chip text-sm ${active ? "lux-chip-active" : ""}`}
+                    type="button"
+                  >
+                    {type}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </motion.div>
 
-        {/* Grid */}
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((c, idx) => {
-            const pdf = isPdf(c.file);
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {filtered.map((cert, index) => {
+            const pdf = isPdf(cert.file);
 
             return (
               <motion.button
-                key={c.title}
+                key={cert.title}
                 type="button"
-                onClick={() => setOpen(c)}
+                onClick={() => setOpen(cert)}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: Math.min(idx * 0.04, 0.2) }}
+                transition={{ duration: 0.45, delay: Math.min(index * 0.04, 0.2) }}
                 whileHover={{ y: -6 }}
-                className="group text-left rounded-2xl border border-slate-800 bg-slate-900/40 overflow-hidden transition hover:border-blue-600"
+                className="lux-panel-soft group overflow-hidden rounded-[30px] text-left"
               >
-                <div className="relative h-44 w-full">
-                  {/* Thumbnail */}
+                <div className="relative h-52 w-full overflow-hidden">
                   {pdf ? (
-                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-950 to-slate-900">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-12 w-12 rounded-2xl border border-blue-600/30 bg-blue-600/10 flex items-center justify-center text-blue-200">
+                    <div className="absolute inset-0 flex items-center justify-center bg-[linear-gradient(135deg,rgba(214,176,124,0.16),rgba(124,199,193,0.08))]">
+                      <div className="flex flex-col items-center gap-3">
+                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[rgba(214,176,124,0.24)] bg-black/18 text-[#f0d4a8]">
                           <FiFileText size={22} />
                         </div>
-                        <div className="text-white font-semibold">PDF</div>
-                        <div className="text-white/60 text-xs px-4 text-center">
-                          Click to preview
-                        </div>
+                        <div className="text-sm uppercase tracking-[0.2em] text-white/68">PDF Preview</div>
                       </div>
                     </div>
                   ) : (
                     <Image
-                      src={c.file}
-                      alt={`${c.title} certificate`}
+                      src={cert.file}
+                      alt={`${cert.title} certificate`}
                       fill
-                      className="object-cover"
+                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
                     />
                   )}
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <div className="text-white font-semibold leading-tight">
-                      {c.title}
-                    </div>
-                    <div className="text-white/70 text-xs mt-1">
-                      {c.issuer} • {c.date}
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(7,16,21,0.85)_100%)]" />
+
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="rounded-full border border-white/10 bg-black/18 px-3 py-2 text-[0.7rem] uppercase tracking-[0.22em] text-white/56">
+                      {cert.issuer} / {cert.date}
                     </div>
                   </div>
                 </div>
 
                 <div className="p-5">
                   <div className="flex items-center justify-between gap-3">
-                    <span className="text-xs rounded-full px-3 py-1 border border-blue-600/25 bg-blue-600/10 text-blue-300">
-                      {c.type}
+                    <span className="rounded-full border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-[#f0d4a8]">
+                      {cert.type}
                     </span>
-                    <span className="text-xs text-slate-400 group-hover:text-blue-300 transition">
-                      Click to view
+                    <span className="text-xs uppercase tracking-[0.18em] text-white/38 group-hover:text-[#7cc7c1]">
+                      View Proof
                     </span>
                   </div>
 
-                  <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-                    <span className="text-slate-200 font-medium">
-                      Skill improved:
-                    </span>{" "}
-                    {c.skillImproved}
+                  <h3 className="mt-4 text-2xl font-semibold text-white">{cert.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-white/66">
+                    <span className="text-white/88">Skill improved:</span> {cert.skillImproved}
                   </p>
-
-                  <p className="mt-2 text-xs text-slate-400 line-clamp-2">
-                    {c.proof}
-                  </p>
+                  <p className="mt-3 line-clamp-3 text-sm leading-7 text-white/54">{cert.proof}</p>
                 </div>
               </motion.button>
             );
           })}
         </div>
 
-        {/* Empty state */}
         {filtered.length === 0 ? (
-          <div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900/40 p-8 text-slate-300">
-            No certificates match your search. Try another keyword.
+          <div className="lux-panel-soft mt-10 rounded-[28px] p-8 text-white/68">
+            No certificates match that filter. Try another skill, issuer, or keyword.
           </div>
         ) : null}
       </div>
 
-      {/* Modal Preview */}
       <AnimatePresence>
         {open ? (
           <motion.div
-            className="fixed inset-0 z-[9999] flex items-center justify-center px-5 py-10 bg-black/70 backdrop-blur"
+            className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/72 px-5 py-8 backdrop-blur"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setOpen(null)}
           >
             <motion.div
-              initial={{ opacity: 0, y: 18, scale: 0.98 }}
+              initial={{ opacity: 0, y: 16, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.98 }}
               transition={{ duration: 0.25 }}
-              className="w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-800 bg-slate-950"
-              onClick={(e) => e.stopPropagation()}
+              className="lux-panel max-h-[92vh] w-full max-w-6xl overflow-hidden rounded-[34px]"
+              onClick={(event) => event.stopPropagation()}
             >
-              <div className="flex items-center justify-between px-5 py-4 border-b border-slate-800">
+              <div className="flex flex-col gap-4 border-b border-white/10 px-5 py-5 md:flex-row md:items-center md:justify-between">
                 <div>
-                  <div className="text-white font-semibold">{open.title}</div>
-                  <div className="text-slate-400 text-sm">
-                    {open.issuer} • {open.date}
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/42">
+                    {open.issuer} / {open.date}
                   </div>
+                  <div className="mt-2 text-2xl font-semibold text-white">{open.title}</div>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <a
                     href={open.file}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-800 bg-black/30 px-3 py-2 text-slate-200 hover:border-blue-600 hover:text-blue-200 transition"
+                    className="lux-button-secondary px-4 py-2 text-sm"
                   >
-                    <FiExternalLink /> Open
+                    <FiExternalLink />
+                    Open
                   </a>
 
-                  <a
-                    href={open.file}
-                    download
-                    className="inline-flex items-center gap-2 rounded-xl border border-slate-800 bg-black/30 px-3 py-2 text-slate-200 hover:border-blue-600 hover:text-blue-200 transition"
-                  >
-                    <FiDownload /> Download
+                  <a href={open.file} download className="lux-button-secondary px-4 py-2 text-sm">
+                    <FiDownload />
+                    Download
                   </a>
 
                   {open.link ? (
@@ -340,34 +311,34 @@ export default function Certificates() {
                       href={open.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="hidden sm:inline-flex items-center gap-2 rounded-xl border border-slate-800 bg-black/30 px-3 py-2 text-slate-200 hover:border-blue-600 hover:text-blue-200 transition"
+                      className="lux-button-secondary px-4 py-2 text-sm"
                     >
-                      <FiExternalLink /> Verify
+                      <FiExternalLink />
+                      Verify
                     </a>
                   ) : null}
 
                   <button
                     type="button"
                     onClick={() => setOpen(null)}
-                    className="inline-flex items-center justify-center rounded-xl border border-slate-800 bg-black/30 px-3 py-2 text-slate-200 hover:border-blue-600 transition"
-                    aria-label="Close"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-black/18 text-white/66 hover:text-white"
+                    aria-label="Close preview"
                   >
                     <FiX />
                   </button>
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-0">
-                {/* LEFT: Preview */}
-                <div className="bg-black min-h-[360px] md:min-h-[520px]">
+              <div className="grid max-h-[calc(92vh-6rem)] gap-0 overflow-auto md:grid-cols-[1.1fr_0.9fr]">
+                <div className="min-h-[360px] bg-black">
                   {isPdf(open.file) ? (
                     <iframe
                       src={open.file}
-                      className="w-full h-full"
+                      className="h-full min-h-[420px] w-full"
                       title={`${open.title} certificate preview`}
                     />
                   ) : (
-                    <div className="relative w-full h-full min-h-[360px] md:min-h-[520px]">
+                    <div className="relative min-h-[420px] w-full">
                       <Image
                         src={open.file}
                         alt={`${open.title} certificate preview`}
@@ -378,28 +349,23 @@ export default function Certificates() {
                   )}
                 </div>
 
-                {/* RIGHT: Details */}
                 <div className="p-6 md:p-7">
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs rounded-full px-3 py-1 border border-blue-600/25 bg-blue-600/10 text-blue-300">
+                    <span className="rounded-full border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-[#f0d4a8]">
                       {open.type}
                     </span>
-                    <span className="text-xs rounded-full px-3 py-1 border border-slate-800 bg-slate-900/40 text-slate-300">
+                    <span className="rounded-full border border-white/10 bg-black/18 px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-white/56">
                       {open.skillImproved}
                     </span>
-                    <span className="text-xs rounded-full px-3 py-1 border border-slate-800 bg-slate-900/40 text-slate-300">
+                    <span className="rounded-full border border-white/10 bg-black/18 px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-white/56">
                       {isPdf(open.file) ? "PDF" : "Image"}
                     </span>
                   </div>
 
-                  <h4 className="mt-4 text-white font-semibold">
+                  <h4 className="display-font mt-6 text-3xl text-white">
                     Evidence of skill improvement
                   </h4>
-                  <p className="mt-2 text-slate-300 leading-relaxed">
-                    {open.proof}
-                  </p>
-
-                
+                  <p className="mt-4 leading-8 text-white/70">{open.proof}</p>
                 </div>
               </div>
             </motion.div>

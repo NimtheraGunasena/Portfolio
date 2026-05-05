@@ -21,86 +21,86 @@ export default function ReflectiveJournal() {
     () => [
       {
         week: "Week 1",
-        title: "Starting PPW & building self-awareness",
+        title: "Starting PPW and building self-awareness",
         focus:
           "Understanding the purpose of PPW and identifying my strengths, gaps, and learning goals.",
         learned: [
-          "How to evaluate myself using evidence (projects, coursework, feedback).",
-          "Why planning matters: goals → skills → actions → outcomes.",
+          "How to evaluate myself using evidence such as projects, coursework, and feedback.",
+          "Why planning matters: goals, skills, actions, and outcomes need to connect clearly.",
           "How a portfolio supports employability and professional identity.",
         ],
         evidence: [
-          "Reviewed my existing projects (React, Node, MongoDB) and identified what to improve (testing, deployment, documentation).",
-          "Outlined a personal brand direction for my portfolio (clean UI, premium style).",
+          "Reviewed existing projects and identified areas to improve such as testing, deployment, and documentation.",
+          "Outlined a personal brand direction for the portfolio with a more premium visual style.",
         ],
         reflection:
-          "I realized that being good at coding is not enough on its own. PPW pushed me to think about how I communicate progress, how I structure growth, and how I prove skills with evidence. This helped me become more intentional about my academic identity and development.",
+          "I realized that technical ability alone is not enough. PPW pushed me to think about how I communicate progress, how I structure my growth, and how I prove skills with evidence. That shift made my academic identity more intentional.",
         nextSteps: [
-          "Define measurable goals for the semester (e.g., deploy 2 projects with CI/CD).",
-          "Start tracking progress weekly in a journal format.",
+          "Define measurable goals for the semester, such as deploying two polished projects.",
+          "Track progress weekly in a more structured journal format.",
         ],
       },
       {
         week: "Week 2",
-        title: "Portfolio structure & evidence-based presentation",
+        title: "Portfolio structure and evidence-based presentation",
         focus:
           "Designing an academic portfolio that presents reflection, projects, and supporting evidence clearly.",
         learned: [
-          "How to structure a portfolio: profile → projects → learning areas → evidence → contact.",
-          "Why storytelling matters: context → approach → outcome → reflection.",
-          "How layout and micro-interactions improve clarity and engagement.",
+          "How to structure a portfolio from profile to projects, learning areas, evidence, and contact.",
+          "Why storytelling matters: context, approach, outcome, and reflection improve understanding.",
+          "How layout and micro-interactions change the clarity of an academic presentation.",
         ],
         evidence: [
-          "Implemented interactive sections such as searchable projects, learning filters, and guided journal content.",
+          "Implemented searchable projects, learning filters, and guided journal content.",
           "Reframed the site as a dedicated academic portfolio instead of hiding academic work behind a separate mode.",
         ],
         reflection:
-          "This week made me understand that the portfolio is a product. Small details like clarity, navigation, and consistency of design can change how an academic reviewer understands my work. I also learned how important it is to connect evidence with reflection instead of only listing achievements.",
+          "This week made me understand that the portfolio itself is a product. Details like navigation, consistency, and visual hierarchy affect how an academic reviewer reads the work. I also learned how important it is to connect evidence with reflection instead of only listing achievements.",
         nextSteps: [
-          "Add clear project outcomes (performance, features, user stories).",
+          "Add clearer project outcomes such as features, metrics, or user impact.",
           "Create certificate and CV sections with proper evidence and dates.",
         ],
       },
       {
         week: "Week 3",
-        title: "Career planning & building employability skills",
+        title: "Career planning and building employability skills",
         focus:
           "Creating a Career Development Plan based on roles, required skills, and realistic milestones.",
         learned: [
-          "How to map a target role (Software Engineer) to skills: frontend, backend, databases, testing, DevOps.",
-          "How to identify skill gaps and turn them into weekly learning tasks.",
-          "How to use certifications strategically (not just collecting, but proving skill improvement).",
+          "How to map a target role such as Software Engineer into concrete skill groups.",
+          "How to identify gaps and convert them into weekly learning tasks.",
+          "How certifications can support skill growth when tied to real project improvement.",
         ],
         evidence: [
-          "Drafted a career plan with short-term / mid-term / long-term goals.",
-          "Identified improvement areas: test automation, system design basics, deployment & monitoring.",
+          "Drafted a career plan with short-term, mid-term, and long-term goals.",
+          "Identified improvement areas including test automation, system design, deployment, and monitoring.",
         ],
         reflection:
-          "PPW helped me stop thinking randomly about the future. I now plan with clear targets and actions. Instead of vague goals, I define practical development areas such as full-stack engineering, testing, and deployment, then turn them into measurable next steps. This approach reduces uncertainty and increases confidence.",
+          "PPW helped me move away from vague future thinking. I now plan with clear targets and actions. Instead of broad ambitions, I define practical development areas such as full-stack engineering, testing, and deployment and turn them into measurable next steps.",
         nextSteps: [
           "Complete one certification focused on testing or cloud deployment.",
-          "Add measurable project metrics (load time, API performance, Lighthouse score).",
+          "Add measurable project metrics such as performance or Lighthouse improvements.",
         ],
       },
       {
         week: "Week 4",
-        title: "Communication, professionalism & continuous improvement",
+        title: "Communication, professionalism, and continuous improvement",
         focus:
-          "Improving professional communication: email writing, clarity, documentation, and teamwork mindset.",
+          "Improving professional communication through clearer writing, documentation, and teamwork habits.",
         learned: [
-          "How to write formal emails and communicate issues clearly.",
-          "How to document features and decisions (README, technical notes).",
-          "How reflection helps continuous improvement: review → learn → adjust.",
+          "How to write formal emails and communicate technical issues clearly.",
+          "How documentation such as README files and technical notes strengthens professionalism.",
+          "How reflection supports continuous improvement through review, learning, and adjustment.",
         ],
         evidence: [
           "Improved portfolio wording to be clearer, more concise, and better aligned with academic review.",
-          "Added structured academic sections so that reflection, certificates, and career planning are easy to assess.",
+          "Added structured academic sections so that reflection, certificates, and career planning are easier to assess.",
         ],
         reflection:
-          "The biggest change is how I present myself. PPW made me more intentional: I write clearly, I document work, and I think about outcomes. These skills strengthen both academic performance and future professional readiness.",
+          "The biggest change is how I present myself. PPW made me more intentional about writing clearly, documenting work, and thinking about outcomes. Those habits strengthen both academic performance and future professional readiness.",
         nextSteps: [
-          "Maintain a monthly reflection even after PPW ends.",
-          "Seek feedback from mentors and iterate the portfolio continuously.",
+          "Maintain a monthly reflection practice even after PPW ends.",
+          "Seek feedback from mentors and keep iterating on the portfolio.",
         ],
       },
     ],
@@ -110,71 +110,67 @@ export default function ReflectiveJournal() {
   const current = entries[active];
 
   return (
-    <section id="reflective" className="relative overflow-hidden bg-black py-24 px-6">
-      {/* background glow */}
+    <section id="reflective" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-blue-600/15 blur-3xl" />
-        <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-purple-600/10 blur-3xl" />
+        <div className="absolute left-[10%] top-20 h-48 w-48 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute right-[6%] top-24 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
-        {/* header */}
+      <div className="section-inner">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.55 }}
+          className="max-w-3xl"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-600/30 bg-blue-600/10 px-4 py-2 text-blue-200">
+          <div className="section-kicker">
             <FiBookOpen />
             PPW Reflection
           </div>
-
-          <h2 className="mt-5 text-4xl md:text-5xl font-extrabold text-white">
-            Reflective <span className="text-blue-500">Journal</span>
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-500" />
-          <p className="mt-6 text-white/70 max-w-3xl mx-auto leading-relaxed">
-            This journal summarizes what I learned during PPW, how I applied it to my portfolio and
-            career thinking, and how I plan to continue improving as a software engineering undergraduate.
+          <h2 className="section-title mt-7">Reflective learning presented with stronger clarity.</h2>
+          <p className="section-copy mt-6">
+            These weekly notes summarize what I learned during PPW, how those
+            lessons were applied to my portfolio and career thinking, and what
+            I plan to improve next.
           </p>
         </motion.div>
 
-        {/* layout */}
-        <div className="grid lg:grid-cols-12 gap-8">
-          {/* left: week selector */}
+        <div className="mt-12 grid gap-8 xl:grid-cols-[0.38fr_0.62fr]">
           <motion.div
             initial={{ opacity: 0, x: -18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-4"
           >
-            <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-4">
-              <p className="text-white/70 text-sm mb-3">Select week</p>
+            <div className="lux-panel rounded-[32px] p-4 md:p-5">
+              <div className="px-2 pb-3 text-sm uppercase tracking-[0.22em] text-white/42">
+                Select Week
+              </div>
 
               <div className="space-y-2">
-                {entries.map((e, i) => {
-                  const selected = i === active;
+                {entries.map((entry, index) => {
+                  const selected = index === active;
+
                   return (
                     <button
-                      key={e.week}
-                      onClick={() => setActive(i)}
-                      className={[
-                        "w-full text-left rounded-xl px-4 py-3 border transition",
+                      key={entry.week}
+                      onClick={() => setActive(index)}
+                      className={`w-full rounded-[22px] border px-4 py-4 text-left transition ${
                         selected
-                          ? "border-blue-500/50 bg-blue-600/10 text-white"
-                          : "border-white/10 bg-black/20 text-white/80 hover:border-blue-500/30",
-                      ].join(" ")}
+                          ? "border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] text-white"
+                          : "border-white/10 bg-black/18 text-white/74 hover:border-[rgba(124,199,193,0.22)]"
+                      }`}
                       type="button"
                     >
-                      <div className="flex items-center justify-between gap-3">
+                      <div className="flex items-start justify-between gap-3">
                         <div>
-                          <div className="text-sm font-semibold">{e.week}</div>
-                          <div className="text-xs text-white/60 mt-0.5">{e.title}</div>
+                          <div className="text-sm uppercase tracking-[0.18em] text-white/46">
+                            {entry.week}
+                          </div>
+                          <div className="mt-2 font-semibold">{entry.title}</div>
                         </div>
-                        {selected ? <FiCheckCircle className="text-blue-400" /> : null}
+                        {selected ? <FiCheckCircle className="mt-1 text-[#f0d4a8]" /> : null}
                       </div>
                     </button>
                   );
@@ -183,76 +179,72 @@ export default function ReflectiveJournal() {
             </div>
           </motion.div>
 
-          {/* right: content */}
           <motion.div
             initial={{ opacity: 0, x: 18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-8"
           >
-            <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur p-7 md:p-10">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+            <div className="lux-panel rounded-[34px] p-7 md:p-8">
+              <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                 <div>
-                  <p className="text-blue-300 text-sm font-semibold">{current.week}</p>
-                  <h3 className="mt-1 text-2xl font-bold text-white">{current.title}</h3>
-                  <p className="mt-3 text-white/70 leading-relaxed">{current.focus}</p>
+                  <div className="text-sm uppercase tracking-[0.22em] text-[#f0d4a8]/78">
+                    {current.week}
+                  </div>
+                  <h3 className="display-font mt-3 text-4xl text-white">{current.title}</h3>
+                  <p className="mt-4 text-white/68 leading-8">{current.focus}</p>
                 </div>
 
-                <div className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white/80 text-sm">
-                  Section: <span className="text-blue-300 font-semibold">Reflective Evidence</span>
+                <div className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/54">
+                  Reflective Evidence
                 </div>
               </div>
 
-              {/* learned */}
-              <div className="mt-8 grid md:grid-cols-2 gap-6">
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
-                  <h4 className="text-white font-semibold mb-3">What I learned</h4>
-                  <ul className="space-y-2 text-white/75">
-                    {current.learned.map((x) => (
-                      <li key={x} className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-500" />
-                        <span>{x}</span>
+              <div className="mt-8 grid gap-6 md:grid-cols-2">
+                <div className="rounded-[26px] border border-white/10 bg-black/18 p-5">
+                  <div className="text-sm uppercase tracking-[0.2em] text-white/42">What I learned</div>
+                  <ul className="mt-4 space-y-3 text-white/70">
+                    {current.learned.map((item) => (
+                      <li key={item} className="flex gap-3">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#f0d4a8]" />
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
-                  <h4 className="text-white font-semibold mb-3">Evidence / Application</h4>
-                  <ul className="space-y-2 text-white/75">
-                    {current.evidence.map((x) => (
-                      <li key={x} className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-400" />
-                        <span>{x}</span>
+                <div className="rounded-[26px] border border-white/10 bg-black/18 p-5">
+                  <div className="text-sm uppercase tracking-[0.2em] text-white/42">Evidence and application</div>
+                  <ul className="mt-4 space-y-3 text-white/70">
+                    {current.evidence.map((item) => (
+                      <li key={item} className="flex gap-3">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
 
-              {/* reflection */}
-              <div className="mt-6 rounded-2xl border border-blue-500/20 bg-blue-600/10 p-5">
-                <h4 className="text-white font-semibold mb-2">Reflection</h4>
-                <p className="text-white/80 leading-relaxed">{current.reflection}</p>
+              <div className="mt-6 rounded-[28px] border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] p-5">
+                <div className="text-sm uppercase tracking-[0.2em] text-[#f0d4a8]">Reflection</div>
+                <p className="mt-3 leading-8 text-white/76">{current.reflection}</p>
               </div>
 
-              {/* next steps */}
-              <div className="mt-6 rounded-2xl border border-white/10 bg-black/20 p-5">
-                <h4 className="text-white font-semibold mb-3">Next steps</h4>
-                <ul className="space-y-2 text-white/75">
-                  {current.nextSteps.map((x) => (
-                    <li key={x} className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                        <span>{x}</span>
+              <div className="mt-6 rounded-[26px] border border-white/10 bg-black/18 p-5">
+                <div className="text-sm uppercase tracking-[0.2em] text-white/42">Next steps</div>
+                <ul className="mt-4 space-y-3 text-white/70">
+                  {current.nextSteps.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <p className="mt-8 text-xs text-white/50">
-                This section documents weekly PPW reflection and the practical
-                evidence connected to each stage of growth.
+              <p className="mt-7 text-xs uppercase tracking-[0.18em] text-white/38">
+                Weekly PPW reflection connected to evidence and future action.
               </p>
             </div>
           </motion.div>

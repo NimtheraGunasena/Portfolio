@@ -1,55 +1,49 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiDownload, FiFileText, FiExternalLink } from "react-icons/fi";
+import { FiDownload, FiExternalLink, FiFileText } from "react-icons/fi";
 
 export default function CVSection() {
-  const cvPdf = "/Uchith_cv.pdf";
+  const cvPdf = "/_Nimthera_Resume_.pdf";
 
   return (
-    <section id="cv" className="relative overflow-hidden bg-black py-24 px-6">
+    <section id="cv" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
-        <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-blue-600/15 blur-3xl" />
+        <div className="absolute left-[12%] top-12 h-44 w-44 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute right-[8%] top-28 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
-        {/* Header */}
+      <div className="section-inner">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="grid gap-8 xl:grid-cols-[0.88fr_1.12fr]"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-600/30 bg-blue-600/10 px-4 py-2 text-blue-200">
-            <FiFileText />
-            Supporting Evidence
+          <div>
+            <div className="section-kicker">
+              <FiFileText />
+              Supporting Document
+            </div>
+            <h2 className="section-title mt-7">Curriculum vitae embedded as premium supporting evidence.</h2>
           </div>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-extrabold text-white">
-            Curriculum <span className="text-blue-500">Vitae</span>
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-500" />
-
-          <p className="mt-6 text-white/70 max-w-3xl mx-auto leading-relaxed">
-            My CV is included as part of this academic portfolio so that formal
-            qualifications, education history, and supporting details are easy to review.
+          <p className="section-copy max-w-none xl:pt-14">
+            The CV is included here so that qualifications, education history,
+            and supporting details can be reviewed without leaving the
+            portfolio experience.
           </p>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3"
+          className="mt-12 flex flex-wrap gap-3"
         >
-          <a
-            href={cvPdf}
-            download
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white hover:brightness-110 active:brightness-95 transition"
-          >
+          <a href={cvPdf} download className="lux-button-primary">
             <FiDownload />
             Download CV
           </a>
@@ -57,10 +51,11 @@ export default function CVSection() {
           <a
             href={cvPdf}
             target="_blank"
-            className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white/90 hover:bg-white/10 transition"
+            rel="noreferrer"
+            className="lux-button-secondary"
           >
             <FiExternalLink />
-            Open in new tab
+            Open in New Tab
           </a>
         </motion.div>
 
@@ -69,19 +64,20 @@ export default function CVSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55 }}
-          className="mt-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur overflow-hidden"
+          className="lux-panel mt-10 overflow-hidden rounded-[36px]"
         >
-          <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
-            <div className="text-white font-semibold">CV Preview</div>
-            <div className="text-white/60 text-sm">Embedded PDF preview</div>
+          <div className="flex flex-col gap-2 border-b border-white/10 px-5 py-5 md:flex-row md:items-center md:justify-between">
+            <div>
+              <div className="text-sm uppercase tracking-[0.2em] text-white/42">CV Preview</div>
+              <div className="mt-2 text-white/70">Embedded PDF for quick academic review</div>
+            </div>
+            <div className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/52">
+              Printable document
+            </div>
           </div>
 
-          <div className="w-full h-[75vh] bg-black">
-            <iframe
-              src={cvPdf}
-              className="w-full h-full"
-              title="Uchith Chethana CV"
-            />
+          <div className="h-[78vh] min-h-[32rem] bg-black">
+            <iframe src={cvPdf} className="h-full w-full" title="Nimthera Gunasena CV" />
           </div>
         </motion.div>
       </div>

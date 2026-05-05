@@ -1,125 +1,174 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiTarget, FiTrendingUp, FiClock } from "react-icons/fi";
+import { FiClock, FiTarget, FiTrendingUp } from "react-icons/fi";
+
+const goalGroups = [
+  {
+    title: "Short-Term",
+    span: "1-2 years",
+    icon: FiClock,
+    accent: "text-[#f0d4a8]",
+    items: [
+      "Maintain strong academic performance",
+      "Complete polished portfolio and capstone-style projects",
+      "Strengthen testing and system design fundamentals",
+      "Deploy stronger full-stack applications",
+      "Earn at least one cloud or testing certification",
+    ],
+  },
+  {
+    title: "Mid-Term",
+    span: "3-5 years",
+    icon: FiTrendingUp,
+    accent: "text-[#7cc7c1]",
+    items: [
+      "Become a dependable full-stack engineer",
+      "Lead small features and smoother team delivery",
+      "Grow stronger knowledge of scalable architecture",
+      "Contribute to open-source or community projects",
+      "Support peers through collaboration and mentoring",
+    ],
+  },
+  {
+    title: "Long-Term",
+    span: "5+ years",
+    icon: FiTarget,
+    accent: "text-white",
+    items: [
+      "Grow into a senior engineering role",
+      "Architect scalable distributed systems",
+      "Build impactful digital products with clear user value",
+      "Keep adapting to emerging technologies",
+      "Explore product leadership or entrepreneurial paths",
+    ],
+  },
+];
 
 export default function CareerPlan() {
   return (
-    <section id="career-plan" className="relative bg-black py-24 px-6 overflow-hidden">
-      {/* background glow */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-indigo-600/15 blur-3xl" />
-        <div className="absolute -bottom-28 -left-28 h-80 w-80 rounded-full bg-blue-600/10 blur-3xl" />
+    <section id="career-plan" className="section-shell overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute right-[12%] top-12 h-52 w-52 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute left-[8%] top-36 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
-        {/* Header */}
+      <div className="section-inner">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.55 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="grid gap-8 xl:grid-cols-[0.92fr_1.08fr]"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-            Academic & Career <span className="text-blue-500">Plan</span>
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-16 bg-blue-500 rounded-full" />
-          <p className="mt-6 text-white/70 max-w-3xl mx-auto leading-relaxed">
-            A structured roadmap that connects my academic progress with the
-            technical and professional capabilities I want to build over time.
+          <div>
+            <div className="section-kicker">Career Roadmap</div>
+            <h2 className="section-title mt-7">A clearer plan from academic progress to industry readiness.</h2>
+          </div>
+
+          <p className="section-copy max-w-none xl:pt-14">
+            This roadmap connects my current academic work to the technical and
+            professional capabilities I want to build over time. It keeps the
+            path grounded, measurable, and aligned with software engineering
+            expectations.
           </p>
         </motion.div>
 
-        {/* Goals Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Short Term */}
-          <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-8">
-            <div className="flex items-center gap-3 text-blue-400 mb-4">
-              <FiClock />
-              <h3 className="font-semibold text-lg">Short-Term (1–2 Years)</h3>
-            </div>
+        <div className="mt-12 grid gap-6 xl:grid-cols-3">
+          {goalGroups.map(({ title, span, icon: Icon, accent, items }, index) => (
+            <motion.div
+              key={title}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.07 }}
+              viewport={{ once: true }}
+              className="lux-panel-soft rounded-[32px] p-6"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/18 ${accent}`}>
+                  <Icon />
+                </div>
+                <div className="text-xs uppercase tracking-[0.22em] text-white/42">{span}</div>
+              </div>
 
-            <ul className="space-y-3 text-white/75">
-              <li>✔ Maintain strong academic performance</li>
-              <li>✔ Complete high-quality portfolio and capstone-style projects</li>
-              <li>✔ Strengthen testing and system design fundamentals</li>
-              <li>✔ Deploy polished full-stack applications</li>
-              <li>✔ Earn at least one cloud or testing certification</li>
-            </ul>
-          </div>
+              <h3 className="display-font mt-6 text-4xl text-white">{title}</h3>
 
-          {/* Mid Term */}
-          <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-8">
-            <div className="flex items-center gap-3 text-indigo-400 mb-4">
-              <FiTrendingUp />
-              <h3 className="font-semibold text-lg">Mid-Term (3–5 Years)</h3>
-            </div>
-
-            <ul className="space-y-3 text-white/75">
-              <li>✔ Become a dependable full-stack engineer</li>
-              <li>✔ Lead small technical features or academic-to-industry transitions</li>
-              <li>✔ Gain stronger knowledge of scalable architecture</li>
-              <li>✔ Contribute to open-source or community projects</li>
-              <li>✔ Support peers through collaboration and mentoring</li>
-            </ul>
-          </div>
-
-          {/* Long Term */}
-          <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-8">
-            <div className="flex items-center gap-3 text-cyan-400 mb-4">
-              <FiTarget />
-              <h3 className="font-semibold text-lg">Long-Term (5+ Years)</h3>
-            </div>
-
-            <ul className="space-y-3 text-white/75">
-              <li>✔ Grow into a senior engineering role</li>
-              <li>✔ Architect scalable distributed systems</li>
-              <li>✔ Build impactful digital products with clear user value</li>
-              <li>✔ Keep adapting to emerging technologies</li>
-              <li>✔ Explore product leadership or entrepreneurial paths</li>
-            </ul>
-          </div>
+              <ul className="mt-6 space-y-3 text-white/70">
+                {items.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#f0d4a8]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
         </div>
 
-        {/* Skill Gap Section */}
-        <div className="mt-16 rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur p-10">
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Skill Gap Analysis & Action Plan
-          </h3>
-
-          <div className="grid md:grid-cols-2 gap-8 text-white/75">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.08 }}
+          viewport={{ once: true }}
+          className="lux-panel mt-10 rounded-[36px] p-7 md:p-8"
+        >
+          <div className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <h4 className="font-semibold text-white mb-3">
-                Areas to Improve
-              </h4>
-              <ul className="space-y-2">
-                <li>• Advanced system design principles</li>
-                <li>• Automated testing & CI/CD pipelines</li>
-                <li>• Cloud deployment (AWS / Azure)</li>
-                <li>• Performance optimization & monitoring</li>
-              </ul>
+              <div className="text-sm uppercase tracking-[0.22em] text-white/42">
+                Skill Gap Analysis
+              </div>
+              <h3 className="display-font mt-4 text-4xl text-white">
+                Improvement areas with a practical action strategy.
+              </h3>
+              <p className="mt-5 leading-8 text-white/68">
+                The goal is steady growth through structured learning,
+                real-world project application, and measurable progress. This
+                keeps the plan aligned with both academic milestones and
+                industry expectations.
+              </p>
             </div>
 
-            <div>
-              <h4 className="font-semibold text-white mb-3">
-                Action Strategy
-              </h4>
-              <ul className="space-y-2">
-                <li>• Complete structured online certifications</li>
-                <li>• Build and deploy scalable projects</li>
-                <li>• Study system design case studies weekly</li>
-                <li>• Seek mentorship and continuous feedback</li>
-              </ul>
+            <div className="grid gap-5 md:grid-cols-2">
+              <div className="rounded-[28px] border border-white/10 bg-black/18 p-5">
+                <div className="text-sm uppercase tracking-[0.2em] text-white/42">
+                  Areas to improve
+                </div>
+                <ul className="mt-4 space-y-3 text-white/70">
+                  {[
+                    "Advanced system design principles",
+                    "Automated testing and CI/CD pipelines",
+                    "Cloud deployment on AWS or Azure",
+                    "Performance optimization and monitoring",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-[28px] border border-white/10 bg-black/18 p-5">
+                <div className="text-sm uppercase tracking-[0.2em] text-white/42">
+                  Action strategy
+                </div>
+                <ul className="mt-4 space-y-3 text-white/70">
+                  {[
+                    "Complete structured online certifications",
+                    "Build and deploy more scalable projects",
+                    "Study system design case studies weekly",
+                    "Seek mentorship and regular feedback",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#f0d4a8]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
-
-          <p className="mt-8 text-sm text-white/60 leading-relaxed">
-            This development plan ensures continuous growth through structured
-            learning, practical application, and measurable progress tracking.
-            It aligns my academic journey with real industry expectations.
-          </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

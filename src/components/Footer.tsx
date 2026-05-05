@@ -1,48 +1,63 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
+const links = [
+  {
+    href: "mailto:nimthera2380@gmail.com",
+    label: "Email",
+    icon: FiMail,
+  },
+  {
+    href: "https://www.linkedin.com/in/nimthera-gunasena-742810252",
+    label: "LinkedIn",
+    icon: FiLinkedin,
+  },
+  {
+    href: "https://github.com/NimtheraGunasena",
+    label: "GitHub",
+    icon: FiGithub,
+  },
+];
+
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#0b1b3a] to-[#07142d] text-white">
-      <div className="mx-auto max-w-6xl px-6 py-14">
-        <div className="flex flex-col items-center text-center">
-          <h3 className="text-3xl font-extrabold text-purple-300">Uchith Chethana</h3>
-          <p className="mt-2 text-white/70">
-            Information Technology Undergraduate | Academic Portfolio
-          </p>
+    <footer className="section-shell pb-10 pt-6">
+      <div className="section-inner">
+        <div className="lux-panel rounded-[34px] px-6 py-8 md:px-8">
+          <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+            <div>
+              <div className="text-xs uppercase tracking-[0.24em] text-white/42">
+                Software Engineer
+              </div>
+              <h3 className="display-font mt-4 text-4xl text-white">Nimthera Gunasena</h3>
+              <p className="mt-3 max-w-xl leading-8 text-white/66">
+                Software Engineering undergraduate building toward stronger
+                full-stack engineering practice through project work,
+                reflection, and continuous learning.
+              </p>
+            </div>
 
-          <div className="mt-6 flex items-center gap-6">
-            <a
-              href="mailto:wgucgjayarathna9898@gmail.com"
-              className="text-white/70 transition hover:text-white"
-              aria-label="Email"
-            >
-              <FiMail className="h-6 w-6" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/uchith-chethana-8681aa301"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white/70 transition hover:text-white"
-              aria-label="LinkedIn"
-            >
-              <FiLinkedin className="h-6 w-6" />
-            </a>
-            <a
-              href="https://github.com/UchithChethana"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white/70 transition hover:text-white"
-              aria-label="GitHub"
-            >
-              <FiGithub className="h-6 w-6" />
-            </a>
+            <div className="flex items-center gap-3">
+              {links.map(({ href, label, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noreferrer" : undefined}
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/62 hover:border-[rgba(214,176,124,0.24)] hover:text-[#f0d4a8]"
+                  aria-label={label}
+                >
+                  <Icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
           </div>
 
-          <div className="mt-10 h-px w-full bg-white/10" />
+          <div className="section-rule mt-8" />
 
-          <p className="mt-6 text-sm text-white/55">
-            © {new Date().getFullYear()} Uchith Chethana. All rights reserved.
-          </p>
+          <div className="mt-6 flex flex-col gap-2 text-sm text-white/44 md:flex-row md:items-center md:justify-between">
+            <div>Academic portfolio curated for coursework, reflection, and future opportunities.</div>
+            <div>&copy; {new Date().getFullYear()} Nimthera Gunasena. All rights reserved.</div>
+          </div>
         </div>
       </div>
     </footer>

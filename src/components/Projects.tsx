@@ -1,11 +1,9 @@
-
-
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { FiExternalLink, FiSearch } from "react-icons/fi";
+import { FiArrowUpRight, FiExternalLink, FiSearch } from "react-icons/fi";
 
 type Project = {
   title: string;
@@ -13,56 +11,62 @@ type Project = {
   tech: string[];
   live?: string;
   github?: string;
-  image?: string;
   highlights?: string[];
+  status: string;
 };
 
 const projects: Project[] = [
   {
-    title: "Grocerry Delivery App",
+    title: "Grocery Delivery App",
     description:
-      "A microservices-based grocery delivery application built with the MERN stack, focusing on scalable architecture and real-world deployment practices.",
+      "A microservices-based grocery delivery application built with the MERN stack, focused on scalable architecture, separated services, and a smoother customer ordering flow.",
     tech: ["JavaScript", "MERN", "React", "Node.js", "MongoDB"],
     github: "https://github.com/yasasArt/Grocery-Delivery-Microservices.git",
     highlights: [
       "Frontend and backend separation",
       "Catalog and shopping flow structure",
-      "Applied MERN architecture practice",
+      "Applied microservices architecture practice",
     ],
+    status: "Featured build",
   },
   {
     title: "Job Change Predictor",
     description:
-      "A machine learning project that predicts job changes based on a dataset of employee attributes, utilizing supervised learning algorithms to analyze patterns and provide insights into career transitions.",
+      "A machine learning project that predicts job changes from employee data, combining data preparation, modeling, and evaluation to surface useful patterns about career transitions.",
     tech: ["JavaScript", "React", "Node.js", "Docker", "MongoDB"],
     github: "https://github.com/asitha-dharmarathne/Job-Change-Prediction-Using-Supervised-Learning.git",
     highlights: [
       "Data preprocessing and feature engineering",
-      "Implemented multiple supervised learning algorithms",
-      "Evaluated model performance with metrics and visualizations",
+      "Multiple supervised learning algorithms",
+      "Model evaluation with metrics and visualizations",
     ],
+    status: "Data-driven project",
   },
   {
     title: "Learning Plus",
     description:
-      "A Python-based applied computing project focused on image upload, transformation, and real-time experimentation with core image-processing concepts.",
+      "A Python-based applied computing project focused on image upload, transformation, and real-time experimentation with image-processing concepts.",
     tech: ["Python", "Jupyter Notebook", "OpenCV", "NumPy"],
     github: "https://github.com/asitha-dharmarathne/learning-plus.git",
     highlights: [
       "Image manipulation techniques",
-      "Real-time experimentation with image processing concepts",
-      "Applied computing principles in a practical project",
+      "Interactive experimentation with processing concepts",
+      "Applied computing principles in a practical workflow",
     ],
+    status: "Technical exploration",
   },
   {
     title: "My Todo App",
     description:
-      "",
-    tech: ["Python", "Jupyter Notebook", "OpenCV", "NumPy"],
+      "A simple task manager built with Python and Flask to practice CRUD flows, clean interaction patterns, and lightweight full-stack delivery.",
+    tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
     github: "https://github.com/UchithChethana/MyTodoApp.git",
     highlights: [
-        "A simple todo app built with Python and Flask",  
+      "Simple productivity-focused UI",
+      "CRUD task workflow with backend routing",
+      "Useful project for refining fundamentals",
     ],
+    status: "Foundation project",
   },
 ];
 
@@ -76,21 +80,22 @@ export default function Projects() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const techOptions = useMemo(() => {
-    const all = projects.flatMap((p) => p.tech);
+    const all = projects.flatMap((project) => project.tech);
     return ["All", ...uniq(all).sort((a, b) => a.localeCompare(b))];
   }, []);
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const normalizedQuery = query.trim().toLowerCase();
 
-    return projects.filter((p) => {
-      const matchesQuery = !q
+    return projects.filter((project) => {
+      const matchesQuery = !normalizedQuery
         ? true
-        : `${p.title} ${p.description} ${p.tech.join(" ")}`
-          .toLowerCase()
-          .includes(q);
+        : `${project.title} ${project.description} ${project.tech.join(" ")}`
+            .toLowerCase()
+            .includes(normalizedQuery);
 
-      const matchesTech = activeTech === "All" ? true : p.tech.includes(activeTech);
+      const matchesTech =
+        activeTech === "All" ? true : project.tech.includes(activeTech);
 
       return matchesQuery && matchesTech;
     });
@@ -99,280 +104,276 @@ export default function Projects() {
   const featured = filtered[0];
 
   return (
-    <section id="projects" className="bg-black py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Heading + Controls */}
-        {/* Title (Get In Touch style) + Search */}
-        <div className="mb-14">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Academic Projects
-            </h2>
+    <section id="projects" className="section-shell overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute left-[10%] top-20 h-52 w-52 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute right-[8%] top-16 h-60 w-60 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+      </div>
 
-            <p className="mt-3 text-slate-400 text-lg">
-              Coursework-inspired builds and self-directed project work used to
-              strengthen practical software engineering skills
+      <div className="section-inner">
+        <motion.div
+          initial={{ opacity: 0, y: 22 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]"
+        >
+          <div>
+            <div className="section-kicker">Selected Work</div>
+            <h2 className="section-title mt-7">Projects that turn study into delivery.</h2>
+          </div>
+
+          <div className="flex flex-col justify-end">
+            <p className="section-copy max-w-none">
+              These projects show how coursework has been translated into
+              software practice across full-stack architecture, machine
+              learning, and applied Python experimentation.
             </p>
 
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: 80 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="h-[3px] bg-blue-600 mx-auto mt-5 rounded-full"
-            />
-          </motion.div>
+            <div className="mt-7 lux-panel rounded-[30px] p-4 md:p-5">
+              <div className="grid gap-4 md:grid-cols-[1.1fr_auto] md:items-center">
+                <div className="relative">
+                  <FiSearch className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/34" />
+                  <input
+                    value={query}
+                    onChange={(event) => setQuery(event.target.value)}
+                    placeholder="Search projects, tools, or technologies"
+                    className="lux-input py-3 pl-11 pr-10"
+                  />
+                  {query ? (
+                    <button
+                      onClick={() => setQuery("")}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/80"
+                      aria-label="Clear search"
+                      type="button"
+                    >
+                      x
+                    </button>
+                  ) : null}
+                </div>
 
-          {/* Search (same as before) */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mt-10 w-full md:w-[420px] mx-auto"
-          >
-            <div className="relative">
-              <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
-              <input
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search academic work (e.g., Docker, React, Python)..."
-                className="w-full rounded-xl bg-slate-900/40 border border-slate-800 pl-11 pr-10 py-3 text-slate-200 placeholder:text-slate-500 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition"
-              />
-              {query ? (
-                <button
-                  onClick={() => setQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200 transition"
-                  aria-label="Clear search"
-                >
-                  ✕
-                </button>
-              ) : null}
+                <div className="flex flex-wrap gap-2">
+                  {techOptions.map((tech) => {
+                    const active = tech === activeTech;
+                    return (
+                      <button
+                        key={tech}
+                        onClick={() => setActiveTech(tech)}
+                        className={`lux-chip text-sm ${active ? "lux-chip-active" : ""}`}
+                        type="button"
+                      >
+                        {tech}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-          </motion.div>
-        </div>
-
-        {/* Tech filter chips */}
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.45, delay: 0.05 }}
-          className="mt-10 flex flex-wrap gap-3"
-        >
-          {techOptions.map((t) => {
-            const active = t === activeTech;
-            return (
-              <button
-                key={t}
-                onClick={() => setActiveTech(t)}
-                className={[
-                  "rounded-full px-4 py-2 text-sm border transition",
-                  active
-                    ? "bg-blue-600/15 border-blue-600 text-blue-300"
-                    : "bg-slate-900/40 border-slate-800 text-slate-300 hover:border-blue-600 hover:text-blue-200",
-                ].join(" ")}
-              >
-                {t}
-              </button>
-            );
-          })}
+          </div>
         </motion.div>
 
-        {/* Featured / Spotlight */}
         {featured ? (
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55, delay: 0.08 }}
-            className="mt-10 relative overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900/60 to-black"
+            transition={{ duration: 0.55, delay: 0.06 }}
+            className="lux-panel mt-12 overflow-hidden rounded-[36px] p-6 md:p-8"
           >
-            <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full blur-3xl bg-blue-600/20" />
-            <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full blur-3xl bg-cyan-500/10" />
-
-            <div className="relative p-7 md:p-10">
-              <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-                <div>
-                  <span className="inline-flex items-center rounded-full border border-blue-600/40 bg-blue-600/10 px-3 py-1 text-xs text-blue-200">
-                    Featured Academic Work
+            <div className="grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
+              <div>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="section-kicker border-[rgba(124,199,193,0.22)] bg-[rgba(124,199,193,0.08)] text-[#7cc7c1]">
+                    Featured Project
                   </span>
-                  <h3 className="mt-3 text-2xl md:text-3xl font-bold text-slate-100">
-                    {featured.title}
-                  </h3>
-                  <p className="mt-3 text-slate-300 max-w-2xl leading-relaxed">
-                    {featured.description}
-                  </p>
-
-                  {featured.highlights?.length ? (
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {featured.highlights.map((h) => (
-                        <span
-                          key={h}
-                          className="text-xs px-3 py-1 rounded-full bg-slate-800/70 text-slate-200 border border-slate-700"
-                        >
-                          {h}
-                        </span>
-                      ))}
-                    </div>
-                  ) : null}
+                  <span className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/50">
+                    {featured.status}
+                  </span>
                 </div>
 
-                <div className="flex gap-3">
+                <h3 className="display-font mt-7 text-5xl text-white">{featured.title}</h3>
+                <p className="mt-5 max-w-3xl text-lg leading-8 text-white/70">
+                  {featured.description}
+                </p>
+
+                {featured.highlights?.length ? (
+                  <div className="mt-7 grid gap-3 sm:grid-cols-2">
+                    {featured.highlights.map((highlight) => (
+                      <div
+                        key={highlight}
+                        className="rounded-[22px] border border-white/10 bg-black/20 px-4 py-4 text-white/74"
+                      >
+                        {highlight}
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+
+              <div className="flex flex-col justify-between gap-6 rounded-[28px] border border-white/10 bg-white/[0.03] p-6">
+                <div>
+                  <div className="text-sm uppercase tracking-[0.22em] text-white/44">
+                    Technology Stack
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {featured.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-[rgba(214,176,124,0.22)] bg-[rgba(214,176,124,0.08)] px-4 py-2 text-sm text-[#f0d4a8]"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid gap-3">
                   {featured.github ? (
                     <a
                       href={featured.github}
                       target="_blank"
-                      className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-black/30 px-4 py-2 text-slate-200 hover:border-blue-600 hover:text-blue-200 transition"
+                      rel="noreferrer"
+                      className="lux-button-secondary justify-between"
                     >
-                      <FaGithub /> GitHub
+                      <span className="inline-flex items-center gap-2">
+                        <FaGithub />
+                        View GitHub Repository
+                      </span>
+                      <FiArrowUpRight />
                     </a>
                   ) : null}
                   {featured.live ? (
                     <a
                       href={featured.live}
                       target="_blank"
-                      className="inline-flex items-center gap-2 rounded-xl border border-blue-600/50 bg-blue-600/10 px-4 py-2 text-blue-200 hover:bg-blue-600/15 transition"
+                      rel="noreferrer"
+                      className="lux-button-primary justify-between"
                     >
-                      <FiExternalLink /> Live
+                      <span className="inline-flex items-center gap-2">
+                        <FiExternalLink />
+                        Open Live Project
+                      </span>
+                      <FiArrowUpRight />
                     </a>
                   ) : null}
                 </div>
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                {featured.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-sm px-3 py-1 bg-blue-600/15 text-blue-300 rounded-full border border-blue-600/30"
-                  >
-                    {tech}
-                  </span>
-                ))}
               </div>
             </div>
           </motion.div>
         ) : null}
 
-        {/* Projects grid */}
-        <div className="mt-10 grid md:grid-cols-3 gap-8">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           <AnimatePresence>
             {filtered.map((project, index) => {
               const isExpanded = expanded === project.title;
+              const preview =
+                project.description.length > 112
+                  ? `${project.description.slice(0, 112)}...`
+                  : project.description;
 
               return (
                 <motion.div
                   key={project.title}
                   layout
-                  initial={{ opacity: 0, y: 26 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 18 }}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 14 }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.45, delay: Math.min(index * 0.05, 0.2) }}
-                  whileHover={{ y: -8 }}
-                  className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition"
+                  whileHover={{ y: -6 }}
+                  className="lux-panel-soft group rounded-[30px] p-6"
                 >
-                  {/* glow */}
-                  <div className="pointer-events-none absolute -inset-1 opacity-0 group-hover:opacity-100 transition duration-500 blur-2xl bg-gradient-to-r from-blue-600/20 via-cyan-500/10 to-indigo-500/20" />
-
-                  <div className="relative">
-                    <div className="flex items-start justify-between gap-3">
-                      <h3 className="text-xl font-semibold text-slate-100">
-                        {project.title}
-                      </h3>
-
-                      <div className="flex gap-3 text-xl">
-                        {project.github ? (
-                          <a
-                            href={project.github}
-                            target="_blank"
-                            className="text-slate-400 hover:text-blue-400 transition"
-                            aria-label="GitHub"
-                          >
-                            <FaGithub />
-                          </a>
-                        ) : null}
-                        {project.live ? (
-                          <a
-                            href={project.live}
-                            target="_blank"
-                            className="text-slate-400 hover:text-blue-400 transition"
-                            aria-label="Live"
-                          >
-                            <FiExternalLink />
-                          </a>
-                        ) : null}
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <div className="text-xs uppercase tracking-[0.22em] text-white/44">
+                        {project.status}
                       </div>
+                      <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
                     </div>
 
-                    <p className="mt-3 text-slate-300 leading-relaxed">
-                      {isExpanded
-                        ? project.description
-                        : project.description.length > 90
-                          ? project.description.slice(0, 90) + "..."
-                          : project.description}
-                    </p>
-
-                    {/* Expand button */}
-                    <button
-                      onClick={() => setExpanded(isExpanded ? null : project.title)}
-                      className="mt-4 text-sm text-blue-300 hover:text-blue-200 transition underline underline-offset-4"
-                    >
-                      {isExpanded ? "Show less" : "Read more"}
-                    </button>
-
-                    {/* Tech tags */}
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {project.tech.map((tech, i) => (
-                        <span
-                          key={i}
-                          className="text-xs px-3 py-1 bg-blue-600/15 text-blue-300 rounded-full border border-blue-600/25"
+                    <div className="flex gap-3 text-lg text-white/42">
+                      {project.github ? (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="hover:text-[#f0d4a8]"
+                          aria-label={`${project.title} GitHub`}
                         >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* extra details (animated) */}
-                    <AnimatePresence>
-                      {isExpanded && project.highlights?.length ? (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.35 }}
-                          className="mt-4 overflow-hidden"
-                        >
-                          <div className="rounded-xl border border-slate-800 bg-black/30 p-4">
-                            <p className="text-xs text-slate-400 mb-2">Highlights</p>
-                            <ul className="space-y-2">
-                              {project.highlights.map((h) => (
-                                <li key={h} className="text-sm text-slate-200">
-                                  <span className="text-blue-400 mr-2">•</span>
-                                  {h}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </motion.div>
+                          <FaGithub />
+                        </a>
                       ) : null}
-                    </AnimatePresence>
+                      {project.live ? (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="hover:text-[#7cc7c1]"
+                          aria-label={`${project.title} live demo`}
+                        >
+                          <FiExternalLink />
+                        </a>
+                      ) : null}
+                    </div>
                   </div>
+
+                  <p className="mt-4 leading-8 text-white/68">
+                    {isExpanded ? project.description : preview}
+                  </p>
+
+                  <button
+                    onClick={() => setExpanded(isExpanded ? null : project.title)}
+                    className="mt-5 text-sm uppercase tracking-[0.2em] text-[#f0d4a8] hover:text-white"
+                    type="button"
+                  >
+                    {isExpanded ? "Collapse details" : "Read more"}
+                  </button>
+
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-white/10 bg-black/18 px-3 py-1.5 text-xs uppercase tracking-[0.16em] text-white/62"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <AnimatePresence>
+                    {isExpanded && project.highlights?.length ? (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-5 rounded-[22px] border border-white/10 bg-black/20 p-4">
+                          <div className="text-xs uppercase tracking-[0.2em] text-white/44">
+                            Highlights
+                          </div>
+                          <ul className="mt-3 space-y-2 text-sm text-white/72">
+                            {project.highlights.map((highlight) => (
+                              <li key={highlight} className="flex gap-3">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                                <span>{highlight}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </motion.div>
+                    ) : null}
+                  </AnimatePresence>
                 </motion.div>
               );
             })}
           </AnimatePresence>
         </div>
 
-        {/* Empty state */}
         {filtered.length === 0 ? (
-          <div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900/40 p-8 text-slate-300">
-            No academic projects match your search or filter. Try another keyword or tool.
+          <div className="lux-panel-soft mt-10 rounded-[28px] p-8 text-white/68">
+            No projects match that search yet. Try another technology or clear the filter.
           </div>
         ) : null}
       </div>

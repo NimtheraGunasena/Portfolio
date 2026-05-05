@@ -1,33 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useMemo, useState, useRef } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
-  SiReact,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiNodedotjs,
   SiExpress,
-  SiMongodb,
-  SiMysql,
-  SiDocker,
+  SiFigma,
   SiGit,
   SiGithub,
-  SiPostman,
-  SiSpringboot,
-  SiRedux,
-  SiJest,
-  SiTestinglibrary,
-  SiFigma,
-  SiVercel,
   SiJsonwebtokens,
+  SiJest,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostman,
+  SiReact,
+  SiSpringboot,
+  SiTailwindcss,
+  SiTestinglibrary,
+  SiTypescript,
 } from "react-icons/si";
 
 type Category = "Frontend" | "Backend" | "Database" | "Tools";
+
 type Skill = {
   name: string;
-  level: number; // 0-100
+  level: number;
   category: Category;
   hint: string;
   icon?: React.ComponentType<{ className?: string }>;
@@ -35,35 +33,29 @@ type Skill = {
 };
 
 const SKILLS: Skill[] = [
-  // Frontend
-  { name: "React", level: 92, category: "Frontend", hint: "Hooks, component architecture, state patterns", icon: SiReact, featured: true },
-  { name: "Next.js", level: 88, category: "Frontend", hint: "App Router, SSR/SSG, routing patterns", icon: SiNextdotjs, featured: true },
-  { name: "TypeScript", level: 86, category: "Frontend", hint: "Types, generics, safer scalable code", icon: SiTypescript, featured: true },
-  { name: "Tailwind CSS", level: 90, category: "Frontend", hint: "Responsive UI, design systems, layouts", icon: SiTailwindcss, featured: true },
-  { name: "UI/UX (Figma)", level: 72, category: "Frontend", hint: "Wireframes, clean layouts, UX thinking", icon: SiFigma },
-
-  // Backend
-  { name: "Node.js", level: 85, category: "Backend", hint: "Async, APIs, performance basics", icon: SiNodedotjs, featured: true },
-  { name: "Express.js", level: 83, category: "Backend", hint: "Middleware, routing, auth patterns", icon: SiExpress, featured: true },
-  { name: "REST API Design", level: 87, category: "Backend", hint: "CRUD, pagination, validation, status codes" },
-  { name: "JWT Authentication", level: 80, category: "Backend", hint: "Secure login, refresh/access tokens", icon: SiJsonwebtokens },
-  { name: "Spring Boot", level: 75, category: "Backend", hint: "Microservices, controllers, JPA basics", icon: SiSpringboot },
-
-  // Database
-  { name: "MongoDB", level: 82, category: "Database", hint: "Schema design, aggregation basics", icon: SiMongodb, featured: true },
-  { name: "MySQL", level: 78, category: "Database", hint: "Joins, relational modeling, queries", icon: SiMysql },
-
-  // Tools
-  { name: "Git", level: 86, category: "Tools", hint: "Branching, PR workflow, collaboration", icon: SiGit, featured: true },
-  { name: "GitHub", level: 85, category: "Tools", hint: "Repo management, actions basics", icon: SiGithub },
-  { name: "Postman", level: 84, category: "Tools", hint: "API testing, debugging collections", icon: SiPostman },
-  { name: "Testing Library", level: 70, category: "Tools", hint: "Component testing best practices", icon: SiTestinglibrary },
+  { name: "React", level: 92, category: "Frontend", hint: "Hooks, component architecture, and interactive UI patterns.", icon: SiReact, featured: true },
+  { name: "Next.js", level: 88, category: "Frontend", hint: "App Router, SSR, and portfolio-focused front-end structure.", icon: SiNextdotjs, featured: true },
+  { name: "TypeScript", level: 86, category: "Frontend", hint: "Safer code through types, interfaces, and clearer contracts.", icon: SiTypescript, featured: true },
+  { name: "Tailwind CSS", level: 90, category: "Frontend", hint: "Responsive layouts, design systems, and consistent UI polish.", icon: SiTailwindcss, featured: true },
+  { name: "UI/UX (Figma)", level: 72, category: "Frontend", hint: "Wireframing, layout exploration, and user-centered interface thinking.", icon: SiFigma },
+  { name: "Node.js", level: 85, category: "Backend", hint: "API building, asynchronous workflows, and backend fundamentals.", icon: SiNodedotjs, featured: true },
+  { name: "Express.js", level: 83, category: "Backend", hint: "Routing, middleware, and application structure for service layers.", icon: SiExpress, featured: true },
+  { name: "REST API Design", level: 87, category: "Backend", hint: "Validation, CRUD design, pagination, and practical endpoint design." },
+  { name: "JWT Authentication", level: 80, category: "Backend", hint: "Secure login flows, access tokens, and role-aware route protection.", icon: SiJsonwebtokens },
+  { name: "Spring Boot", level: 75, category: "Backend", hint: "Controllers, layered structure, and Java service development.", icon: SiSpringboot },
+  { name: "MongoDB", level: 82, category: "Database", hint: "Schema design, querying, and document-oriented data modeling.", icon: SiMongodb, featured: true },
+  { name: "MySQL", level: 78, category: "Database", hint: "Relational thinking, joins, and structured query practice.", icon: SiMysql },
+  { name: "Git", level: 86, category: "Tools", hint: "Version control, branching, and iterative delivery habits.", icon: SiGit, featured: true },
+  { name: "GitHub", level: 85, category: "Tools", hint: "Repository management, collaboration, and workflow organization.", icon: SiGithub },
+  { name: "Postman", level: 84, category: "Tools", hint: "API exploration, debugging, and test collection workflows.", icon: SiPostman },
+  { name: "Testing Library", level: 70, category: "Tools", hint: "Component behavior testing and stronger quality habits.", icon: SiTestinglibrary },
+  { name: "Jest", level: 68, category: "Tools", hint: "Unit testing fundamentals and confidence-building automation.", icon: SiJest },
 ];
 
 const CATEGORIES: Array<"All" | Category> = ["All", "Frontend", "Backend", "Database", "Tools"];
 
-function clamp(n: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, n));
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
 }
 
 function GlowCard({
@@ -76,7 +68,7 @@ function GlowCard({
   onClick?: () => void;
 }) {
   const ref = useRef<HTMLDivElement | null>(null);
-  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 0, y: 0 });
   const [show, setShow] = useState(false);
 
   return (
@@ -84,25 +76,22 @@ function GlowCard({
       ref={ref}
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
-      onMouseMove={(e) => {
-        const r = ref.current?.getBoundingClientRect();
-        if (!r) return;
-        setPos({ x: e.clientX - r.left, y: e.clientY - r.top });
+      onMouseMove={(event) => {
+        const rect = ref.current?.getBoundingClientRect();
+        if (!rect) return;
+        setPosition({ x: event.clientX - rect.left, y: event.clientY - rect.top });
       }}
       onClick={onClick}
-      className={`relative overflow-hidden rounded-2xl border border-slate-800 bg-black/40 backdrop-blur transition ${className}`}
+      className={`lux-panel-soft relative overflow-hidden rounded-[30px] ${className}`}
     >
-      {/* cursor glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 transition-opacity duration-300"
         style={{
           opacity: show ? 1 : 0,
-          background: `radial-gradient(260px circle at ${pos.x}px ${pos.y}px, rgba(37,99,235,0.18), transparent 60%)`,
+          background: `radial-gradient(280px circle at ${position.x}px ${position.y}px, rgba(240,212,168,0.16), transparent 60%)`,
         }}
       />
-      {/* subtle edge glow */}
-      <div aria-hidden className="pointer-events-none absolute -inset-1 opacity-0 hover:opacity-100 transition duration-500 blur-2xl bg-gradient-to-r from-blue-600/15 via-cyan-500/10 to-indigo-500/15" />
       <div className="relative">{children}</div>
     </div>
   );
@@ -113,69 +102,73 @@ export default function Skills() {
   const [query, setQuery] = useState("");
   const [pinned, setPinned] = useState<string | null>(null);
 
-  const stackRow = useMemo(() => {
-    const picks = [
+  const featuredStack = useMemo(
+    () => [
       { name: "React", Icon: SiReact },
       { name: "Next.js", Icon: SiNextdotjs },
       { name: "TypeScript", Icon: SiTypescript },
       { name: "Tailwind", Icon: SiTailwindcss },
-      { name: "Node", Icon: SiNodedotjs },
-      { name: "Express", Icon: SiExpress },
+      { name: "Node.js", Icon: SiNodedotjs },
       { name: "MongoDB", Icon: SiMongodb },
-      { name: "Docker", Icon: SiDocker },
       { name: "Git", Icon: SiGit },
       { name: "Postman", Icon: SiPostman },
-    ];
-    return picks;
-  }, []);
+    ],
+    []
+  );
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const normalizedQuery = query.trim().toLowerCase();
 
-    return SKILLS.filter((s) => {
-      const matchesCategory = activeCategory === "All" ? true : s.category === activeCategory;
-      const matchesQuery = !q ? true : `${s.name} ${s.hint} ${s.category}`.toLowerCase().includes(q);
+    return SKILLS.filter((skill) => {
+      const matchesCategory =
+        activeCategory === "All" ? true : skill.category === activeCategory;
+      const matchesQuery = !normalizedQuery
+        ? true
+        : `${skill.name} ${skill.hint} ${skill.category}`
+            .toLowerCase()
+            .includes(normalizedQuery);
+
       return matchesCategory && matchesQuery;
-    })
-      .sort((a, b) => {
-        if (pinned) {
-          if (a.name === pinned) return -1;
-          if (b.name === pinned) return 1;
-        }
-        const fa = a.featured ? 1 : 0;
-        const fb = b.featured ? 1 : 0;
-        if (fb !== fa) return fb - fa;
-        return b.level - a.level;
-      });
+    }).sort((a, b) => {
+      if (pinned) {
+        if (a.name === pinned) return -1;
+        if (b.name === pinned) return 1;
+      }
+
+      const aFeatured = a.featured ? 1 : 0;
+      const bFeatured = b.featured ? 1 : 0;
+
+      if (bFeatured !== aFeatured) return bFeatured - aFeatured;
+      return b.level - a.level;
+    });
   }, [activeCategory, query, pinned]);
 
   return (
-    <section id="skills" className="relative overflow-hidden bg-slate-900 py-20 px-6">
+    <section id="skills" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-blue-600/10 blur-3xl" />
-        <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-indigo-500/10 blur-3xl" />
+        <div className="absolute left-[14%] top-16 h-44 w-44 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute right-[8%] top-36 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
+      <div className="section-inner">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="grid gap-8 xl:grid-cols-[0.88fr_1.12fr]"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white">Learning Areas</h2>
-          <p className="mt-3 text-slate-400 text-lg">
-            Technologies and engineering areas strengthened through coursework,
-            certifications, and applied project practice
+          <div>
+            <div className="section-kicker">Capability Map</div>
+            <h2 className="section-title mt-7">Learning areas with clearer depth and confidence.</h2>
+          </div>
+
+          <p className="section-copy max-w-none xl:pt-14">
+            These tools and disciplines have been strengthened through
+            coursework, certificates, and project delivery. The layout below
+            makes it easier to scan core strengths while still showing where I
+            am actively growing.
           </p>
-          <motion.div
-            initial={{ width: 0 }}
-            whileInView={{ width: 80 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="h-[3px] bg-blue-600 mx-auto mt-5 rounded-full"
-          />
         </motion.div>
 
         <motion.div
@@ -183,23 +176,30 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
           viewport={{ once: true }}
-          className="mb-10"
+          className="mt-12"
         >
-          <GlowCard className="p-5">
-            <div className="flex items-center justify-between gap-4 flex-wrap">
+          <GlowCard className="p-6">
+            <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
-                <p className="text-sm text-slate-400">Academic Toolkit</p>
-                <p className="text-slate-200 font-medium">Core tools I rely on most in project work</p>
+                <div className="text-sm uppercase tracking-[0.2em] text-white/44">
+                  Core Toolkit
+                </div>
+                <div className="display-font mt-3 text-3xl text-white">
+                  The technologies I reach for most often.
+                </div>
               </div>
-              <div className="flex items-center gap-3 flex-wrap justify-end">
-                {stackRow.map(({ name, Icon }) => (
+
+              <div className="flex flex-wrap gap-2">
+                {featuredStack.map(({ name, Icon }) => (
                   <div
                     key={name}
-                    className="flex items-center gap-2 rounded-xl border border-slate-800 bg-slate-950/40 px-3 py-2"
+                    className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-sm text-white/70"
                     title={name}
                   >
-                    <Icon className="text-slate-200" />
-                    <span className="text-xs text-slate-300">{name}</span>
+                    <span className="inline-flex items-center gap-2">
+                      <Icon className="text-[#f0d4a8]" />
+                      {name}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -207,66 +207,53 @@ export default function Skills() {
           </GlowCard>
         </motion.div>
 
-        {/* Controls */}
-        <div className="grid md:grid-cols-2 gap-4 items-start">
-          {/* Search */}
-          <GlowCard className="p-4">
-            <p className="text-sm text-slate-400">Search</p>
-            <div className="mt-2 relative">
+        <div className="mt-8 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+          <GlowCard className="p-5">
+            <div className="text-sm uppercase tracking-[0.2em] text-white/44">Search</div>
+            <div className="mt-3">
               <input
                 value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search learning areas (e.g., React, Next, JWT...)"
-                className="w-full rounded-xl bg-black/40 border border-slate-800 px-4 py-3 text-slate-200 placeholder:text-slate-500 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition"
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Search learning areas or tools"
+                className="lux-input px-4 py-3"
               />
-              {query ? (
-                <button
-                  onClick={() => setQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200 transition"
-                  aria-label="Clear search"
-                >
-                  ✕
-                </button>
-              ) : null}
             </div>
           </GlowCard>
 
-          {/* Category tabs */}
-          <GlowCard className="p-4">
-            <p className="text-sm text-slate-400">Filter</p>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {CATEGORIES.map((c) => {
-                const active = c === activeCategory;
-                return (
-                  <button
-                    key={c}
-                    onClick={() => setActiveCategory(c)}
-                    className={[
-                      "rounded-full px-4 py-2 text-sm border transition",
-                      active
-                        ? "bg-blue-600/15 border-blue-600 text-blue-300"
-                        : "bg-black/30 border-slate-800 text-slate-300 hover:border-blue-600 hover:text-blue-200",
-                    ].join(" ")}
-                  >
-                    {c}
-                  </button>
-                );
-              })}
+          <GlowCard className="p-5">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="text-sm uppercase tracking-[0.2em] text-white/44">Filter by category</div>
               {pinned ? (
                 <button
                   onClick={() => setPinned(null)}
-                  className="rounded-full px-4 py-2 text-sm border bg-black/30 border-slate-800 text-slate-300 hover:border-blue-600 hover:text-blue-200 transition"
-                  title="Clear pinned skill"
+                  className="text-xs uppercase tracking-[0.18em] text-[#f0d4a8] hover:text-white"
+                  type="button"
                 >
-                  Clear pin: <span className="text-blue-300">{pinned}</span>
+                  Clear pin: {pinned}
                 </button>
               ) : null}
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              {CATEGORIES.map((category) => {
+                const active = category === activeCategory;
+
+                return (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={`lux-chip text-sm ${active ? "lux-chip-active" : ""}`}
+                    type="button"
+                  >
+                    {category}
+                  </button>
+                );
+              })}
             </div>
           </GlowCard>
         </div>
 
-        {/* Grid */}
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((skill, index) => {
             const isPinned = pinned === skill.name;
             const Icon = skill.icon;
@@ -277,60 +264,58 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: Math.min(index * 0.04, 0.2) }}
+                transition={{ duration: 0.45, delay: Math.min(index * 0.04, 0.22) }}
               >
                 <GlowCard
-                  onClick={() => setPinned((prev) => (prev === skill.name ? null : skill.name))}
-                  className={[
-                    "p-6 cursor-pointer hover:-translate-y-1 transition-transform",
-                    isPinned ? "border-blue-500/70" : "",
-                  ].join(" ")}
+                  onClick={() => setPinned((current) => (current === skill.name ? null : skill.name))}
+                  className={`cursor-pointer p-6 ${isPinned ? "border-[rgba(214,176,124,0.24)]" : ""}`}
                 >
                   <div className="flex items-start justify-between gap-3">
-                    <div className="flex items-start gap-3">
-                      <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-3">
-                        {Icon ? <Icon className="text-slate-200 text-lg" /> : <span className="text-slate-300">★</span>}
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-[20px] border border-white/10 bg-black/18 p-3 text-lg text-[#f0d4a8]">
+                        {Icon ? <Icon className="h-5 w-5" /> : <span>+</span>}
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-slate-100">{skill.name}</h3>
-                        <p className="mt-1 text-sm text-slate-400">{skill.category}</p>
+                        <div className="text-sm uppercase tracking-[0.2em] text-white/42">
+                          {skill.category}
+                        </div>
+                        <h3 className="mt-2 text-xl font-semibold text-white">{skill.name}</h3>
                       </div>
                     </div>
 
                     <span
-                      className={[
-                        "text-xs rounded-full px-3 py-1 border",
+                      className={`rounded-full border px-3 py-1 text-xs uppercase tracking-[0.18em] ${
                         isPinned
-                          ? "border-blue-500/60 text-blue-300 bg-blue-600/10"
-                          : "border-slate-700 text-slate-300 bg-slate-900/30",
-                      ].join(" ")}
-                      title="Click to pin"
+                          ? "border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] text-[#f0d4a8]"
+                          : "border-white/10 bg-black/18 text-white/56"
+                      }`}
                     >
                       {isPinned ? "Pinned" : "Pin"}
                     </span>
                   </div>
 
-                  <p className="mt-4 text-sm text-slate-300 leading-relaxed">{skill.hint}</p>
+                  <p className="mt-5 leading-8 text-white/68">{skill.hint}</p>
 
-                  <div className="mt-5">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-400">Familiarity</span>
-                      <span className="text-xs text-slate-200">{clamp(skill.level, 0, 100)}%</span>
+                  <div className="mt-6">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-white/46">Confidence level</span>
+                      <span className="text-white/78">{clamp(skill.level, 0, 100)}%</span>
                     </div>
-                    <div className="mt-2 h-2 w-full rounded-full bg-slate-800 overflow-hidden">
+
+                    <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/8">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${clamp(skill.level, 0, 100)}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="h-full rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-500"
+                        className="h-full rounded-full bg-[linear-gradient(90deg,#f0d4a8_0%,#d6b07c_48%,#7cc7c1_100%)]"
                       />
                     </div>
                   </div>
 
-                  <div className="mt-5 flex items-center justify-between text-xs text-slate-500">
-                    <span>{isPinned ? "Pinned for quick review" : "Click to pin"}</span>
-                    <span className="text-slate-400">Coursework + projects</span>
+                  <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-white/42">
+                    <span>{isPinned ? "Saved for quick review" : "Click card to pin"}</span>
+                    <span>Coursework + projects</span>
                   </div>
                 </GlowCard>
               </motion.div>
@@ -338,10 +323,9 @@ export default function Skills() {
           })}
         </div>
 
-        {/* Empty state */}
         {filtered.length === 0 ? (
-          <div className="mt-10 rounded-2xl border border-slate-800 bg-black/40 p-8 text-slate-300">
-            No learning areas match your search. Try a different keyword.
+          <div className="lux-panel-soft mt-10 rounded-[28px] p-8 text-white/68">
+            No learning areas match that search. Try a different keyword or reset the filters.
           </div>
         ) : null}
       </div>

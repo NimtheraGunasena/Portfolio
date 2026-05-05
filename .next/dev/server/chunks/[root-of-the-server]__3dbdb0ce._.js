@@ -80,18 +80,28 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$qrcode$2f$lib$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/qrcode/lib/index.js [app-route] (ecmascript)");
 ;
-async function GET(req) {
-    const { searchParams } = new URL(req.url);
-    const text = searchParams.get("text") || "https://github.com/UchithChethana";
-    const png = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$qrcode$2f$lib$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].toBuffer(text, {
-        type: "png",
-        width: 512,
-        margin: 2
+async function GET(request) {
+    const { searchParams } = new URL(request.url);
+    const text = searchParams.get("text");
+    if (!text) {
+        return new Response("Missing text query parameter", {
+            status: 400
+        });
+    }
+    const svg = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$qrcode$2f$lib$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].toString(text, {
+        errorCorrectionLevel: "M",
+        margin: 1,
+        type: "svg",
+        width: 240,
+        color: {
+            dark: "#071015",
+            light: "#ffffff"
+        }
     });
-    return new Response(png, {
+    return new Response(svg, {
         headers: {
-            "Content-Type": "image/png",
-            "Cache-Control": "public, max-age=86400"
+            "Content-Type": "image/svg+xml",
+            "Cache-Control": "public, max-age=3600"
         }
     });
 }

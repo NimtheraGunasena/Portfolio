@@ -3,34 +3,54 @@
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useMemo, useRef } from "react";
-import { FiAward, FiBookOpen, FiTarget } from "react-icons/fi";
+import { FiArrowRight, FiAward, FiBookOpen, FiBriefcase, FiTarget } from "react-icons/fi";
 
 export default function Hero() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const xSpring = useSpring(x, { stiffness: 180, damping: 18 });
   const ySpring = useSpring(y, { stiffness: 180, damping: 18 });
-  const rotateY = useTransform(xSpring, [-60, 60], [-10, 10]);
-  const rotateX = useTransform(ySpring, [-60, 60], [10, -10]);
+  const rotateY = useTransform(xSpring, [-100, 100], [-11, 11]);
+  const rotateX = useTransform(ySpring, [-100, 100], [11, -11]);
   const cardRef = useRef<HTMLDivElement | null>(null);
 
-  const dots = useMemo(
+  const proofCards = useMemo(
     () => [
-      { className: "top-4 right-10 h-3 w-3 bg-yellow-400", delay: 0 },
-      { className: "top-16 -left-2 h-4 w-4 bg-emerald-300/80", delay: 0.2 },
-      { className: "bottom-10 -right-1 h-5 w-5 bg-sky-300/70", delay: 0.35 },
-      { className: "-bottom-2 left-14 h-3.5 w-3.5 bg-pink-300/70", delay: 0.5 },
+      { label: "Academic Years", value: "4", accent: "text-[#f0d4a8]" },
+      { label: "Evidence Pieces", value: "12+", accent: "text-[#7cc7c1]" },
+      { label: "Active Focus", value: "Full-Stack Growth", accent: "text-white" },
     ],
     []
   );
 
-  const handleMove = (e: React.MouseEvent) => {
-    const el = cardRef.current;
-    if (!el) return;
+  const insightCards = useMemo(
+    () => [
+      {
+        icon: FiBookOpen,
+        title: "Reflective Learning",
+        detail: "PPW entries, academic evidence, and personal growth mapped into one clear story.",
+      },
+      {
+        icon: FiBriefcase,
+        title: "Project Craft",
+        detail: "Coursework translated into portfolio-ready applications with stronger UI and system thinking.",
+      },
+      {
+        icon: FiAward,
+        title: "Professional Readiness",
+        detail: "Certificates, CV material, and a structured career plan supporting the technical journey.",
+      },
+    ],
+    []
+  );
 
-    const rect = el.getBoundingClientRect();
-    x.set(e.clientX - rect.left - rect.width / 2);
-    y.set(e.clientY - rect.top - rect.height / 2);
+  const handleMove = (event: React.MouseEvent) => {
+    const element = cardRef.current;
+    if (!element) return;
+
+    const rect = element.getBoundingClientRect();
+    x.set(event.clientX - rect.left - rect.width / 2);
+    y.set(event.clientY - rect.top - rect.height / 2);
   };
 
   const handleLeave = () => {
@@ -41,156 +61,182 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-black pt-36"
+      className="section-shell flex min-h-screen items-center overflow-hidden pt-36 md:pt-40"
     >
-      <motion.div
-        aria-hidden
-        className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-tr from-purple-500/40 via-pink-500/30 to-blue-500/35 blur-3xl"
-        animate={{ x: [0, 30, 0], y: [0, 18, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-gradient-to-tr from-blue-500/35 via-cyan-500/25 to-emerald-500/30 blur-3xl"
-        animate={{ x: [0, -26, 0], y: [0, -16, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute left-[8%] top-24 h-56 w-56 rounded-full bg-[#d6b07c]/12 blur-3xl" />
+        <div className="absolute right-[10%] top-36 h-64 w-64 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute bottom-12 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-white/4 blur-3xl" />
+      </div>
 
-      <div className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 md:grid-cols-2 md:items-center">
+      <div className="section-inner grid items-center gap-14 xl:grid-cols-[1.15fr_0.95fr]">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center md:text-left"
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/25 bg-blue-600/10 px-4 py-2 text-sm text-blue-200">
-            <FiBookOpen />
-            BSc (Hons) Information Technology Undergraduate
+          <div className="section-kicker">
+            <FiTarget />
+            Academic Portfolio 2026
           </div>
 
-          <h1 className="mb-6 text-5xl font-bold text-white md:text-6xl">
-            {" "}
-            <span className="text-blue-500">Uchith Chethana</span>
-          </h1>
-
-          <p className="mb-8 max-w-2xl text-lg text-gray-400 md:text-xl">
-            A focused record of my academic growth, applied software engineering
-            projects, reflective learning, certifications, and career planning.
+          <p className="mt-8 text-sm uppercase tracking-[0.34em] text-white/46">
+            Nimthera Gunasena | Software Engineering Undergraduate
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              href="#reflective"
-              className="rounded-lg bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-700"
-            >
-              Explore Journal
-            </motion.a>
+          <h1 className="section-title mt-4 max-w-4xl text-glow">
+            A more refined showcase of academic growth, engineering momentum, and
+            professional ambition.
+          </h1>
 
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              href="#certificates"
-              className="rounded-lg border border-gray-500 px-6 py-3 text-white transition hover:border-blue-500 hover:text-blue-400"
-            >
-              View Certificates
-            </motion.a>
+          <p className="section-copy mt-8 text-lg md:text-[1.12rem]">
+            This portfolio brings together applied software projects, reflective
+            PPW work, certifications, and a future-facing career plan in a
+            presentation that feels polished, intentional, and premium.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href="#projects" className="lux-button-primary">
+              Explore Projects
+              <FiArrowRight />
+            </a>
+            <a href="#reflective" className="lux-button-secondary">
+              Read Journal
+            </a>
           </div>
 
-          <div className="mt-10 grid gap-3 sm:grid-cols-3">
-            {[
-              {
-                icon: FiBookOpen,
-                title: "Academic Focus",
-                detail: "Software engineering, full-stack systems, and reflective practice",
-              },
-              {
-                icon: FiAward,
-                title: "Evidence Included",
-                detail: "Projects, certificates, journal entries, and supporting CV material",
-              },
-              {
-                icon: FiTarget,
-                title: "Current Direction",
-                detail: "Building stronger engineering depth through applied project work",
-              },
-            ].map(({ icon: Icon, title, detail }) => (
+          <div className="mt-12 grid gap-4 sm:grid-cols-3">
+            {proofCards.map((card) => (
+              <div
+                key={card.label}
+                className="lux-panel-soft rounded-[28px] px-5 py-5"
+              >
+                <div className={`display-font text-3xl ${card.accent}`}>{card.value}</div>
+                <div className="mt-2 text-sm tracking-[0.08em] text-white/56">{card.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 grid gap-4 lg:grid-cols-3">
+            {insightCards.map(({ icon: Icon, title, detail }) => (
               <div
                 key={title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-4 text-left backdrop-blur"
+                className="rounded-[28px] border border-white/10 bg-white/[0.03] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
               >
-                <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-600/10 text-blue-200">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[rgba(214,176,124,0.22)] bg-[rgba(214,176,124,0.08)] text-[#f0d4a8]">
                   <Icon />
                 </div>
-                <div className="font-semibold text-white">{title}</div>
-                <p className="mt-2 text-sm leading-relaxed text-white/65">{detail}</p>
+                <div className="mt-5 text-lg font-semibold text-white">{title}</div>
+                <p className="mt-3 text-sm leading-7 text-white/62">{detail}</p>
               </div>
             ))}
           </div>
         </motion.div>
 
-        <div className="flex justify-center md:justify-end">
+        <motion.div
+          initial={{ opacity: 0, y: 38 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.85, delay: 0.08, ease: "easeOut" }}
+          className="relative flex justify-center xl:justify-end"
+        >
           <motion.div
             ref={cardRef}
             onMouseMove={handleMove}
             onMouseLeave={handleLeave}
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-            whileHover={{ scale: 1.02 }}
-            className="relative"
+            className="relative w-full max-w-[31rem]"
           >
+            <div
+              aria-hidden
+              className="absolute inset-3 rounded-[32px] border border-white/10"
+              style={{ transform: "translateZ(-30px)" }}
+            />
             <motion.div
               aria-hidden
-              className="absolute -inset-8 rounded-full bg-gradient-to-tr from-purple-500 via-pink-500 to-blue-500 blur-3xl opacity-30"
-              animate={{ opacity: [0.22, 0.38, 0.22] }}
-              transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -left-10 top-12 h-44 w-44 rounded-full bg-[#d6b07c]/18 blur-3xl"
+              animate={{ scale: [1, 1.08, 1], opacity: [0.5, 0.72, 0.5] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+              style={{ transform: "translateZ(-60px)" }}
+            />
+            <motion.div
+              aria-hidden
+              className="absolute -bottom-8 right-0 h-52 w-52 rounded-full bg-[#7cc7c1]/16 blur-3xl"
+              animate={{ scale: [1.04, 0.96, 1.04], opacity: [0.48, 0.72, 0.48] }}
+              transition={{ duration: 6.2, repeat: Infinity, ease: "easeInOut" }}
               style={{ transform: "translateZ(-40px)" }}
             />
 
             <div
-              aria-hidden
-              className="absolute -inset-2 rounded-full border border-white/10"
-              style={{ transform: "translateZ(-10px)" }}
-            />
+              className="lux-panel relative overflow-hidden rounded-[36px] p-5"
+              style={{ transform: "translateZ(10px)" }}
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(240,212,168,0.16),transparent_32%),linear-gradient(135deg,rgba(255,255,255,0.06),transparent_48%)]" />
 
-            {dots.map((dot, index) => (
-              <motion.span
-                key={index}
-                aria-hidden
-                className={`absolute rounded-full ${dot.className}`}
-                animate={{ y: [0, -10, 0], x: [0, 6, 0] }}
-                transition={{
-                  duration: 3.2,
-                  repeat: Infinity,
-                  delay: dot.delay,
-                  ease: "easeInOut",
-                }}
-                style={{ transform: "translateZ(30px)" }}
-              />
-            ))}
+              <div className="relative rounded-[28px] border border-white/12 bg-[rgba(255,255,255,0.03)] p-4">
+                <div className="flex items-center justify-between pb-4">
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.26em] text-white/45">
+                      Portfolio Portrait
+                    </div>
+                    <div className="mt-1 text-sm text-white/68">Nimthera Gunasena</div>
+                  </div>
+                  <div className="lux-chip text-[0.72rem] uppercase tracking-[0.2em] text-[#7cc7c1]">
+                    
+                  </div>
+                </div>
+
+                <div className="relative overflow-hidden rounded-[26px]">
+                  <div className="absolute inset-0 z-10 bg-[linear-gradient(180deg,transparent_40%,rgba(7,16,21,0.3)_100%)]" />
+                  <div className="absolute inset-x-0 top-0 z-10 h-32 bg-[linear-gradient(180deg,rgba(240,212,168,0.18),transparent)]" />
+                  <div className="relative aspect-[0.88] w-full overflow-hidden rounded-[26px]">
+                    <Image
+                      src="/image-2.png"
+                      alt="Nimthera Gunasena"
+                      fill
+                      priority
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <div className="rounded-[22px] border border-white/10 bg-black/20 p-4">
+                    <div className="text-xs uppercase tracking-[0.22em] text-white/45">Current Role</div>
+                    <div className="mt-2 display-font text-2xl text-white">
+                      SE Undergraduate
+                    </div>
+                  </div>
+                  <div className="rounded-[22px] border border-white/10 bg-black/20 p-4">
+                    <div className="text-xs uppercase tracking-[0.22em] text-white/45">Main Goal</div>
+                    <div className="mt-2 display-font text-2xl text-[#f0d4a8]">
+                      Build with clarity
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <motion.div
-              className="relative h-72 w-72 overflow-hidden rounded-full border-4 border-white/80 shadow-2xl md:h-80 md:w-80"
-              style={{ transform: "translateZ(40px)" }}
-              whileTap={{ scale: 0.98 }}
+              className="lux-panel-soft absolute -left-8 top-16 rounded-[24px] px-4 py-4 max-md:hidden"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
+              style={{ transform: "translateZ(38px)" }}
             >
-              <Image
-                src="/Uchith.jpeg"
-                alt="Uchith Chethana"
-                fill
-                priority
-                className="object-cover"
-              />
-
-              <div
-                aria-hidden
-                className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-white/10"
-              />
+              <div className="text-xs uppercase tracking-[0.22em] text-white/46">Focus</div>
+              <div className="mt-2 text-sm text-white/78">Reflection + product craft</div>
             </motion.div>
 
-            {/*  */}
+            <motion.div
+              className="lux-panel-soft absolute -right-6 bottom-14 rounded-[24px] px-4 py-4 max-md:hidden"
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
+              style={{ transform: "translateZ(32px)" }}
+            >
+              <div className="text-xs uppercase tracking-[0.22em] text-white/46">Trajectory</div>
+              <div className="mt-2 text-sm text-white/78">Coursework into production habits</div>
+            </motion.div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
