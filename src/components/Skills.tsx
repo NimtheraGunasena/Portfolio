@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import {
   SiExpress,
   SiFigma,
@@ -58,49 +58,13 @@ function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(max, value));
 }
 
-function GlowCard({
-  children,
-  className = "",
-  onClick,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-}) {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [show, setShow] = useState(false);
-
-  return (
-    <div
-      ref={ref}
-      onMouseEnter={() => setShow(true)}
-      onMouseLeave={() => setShow(false)}
-      onMouseMove={(event) => {
-        const rect = ref.current?.getBoundingClientRect();
-        if (!rect) return;
-        setPosition({ x: event.clientX - rect.left, y: event.clientY - rect.top });
-      }}
-      onClick={onClick}
-      className={`lux-panel-soft relative overflow-hidden rounded-[30px] ${className}`}
-    >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 transition-opacity duration-300"
-        style={{
-          opacity: show ? 1 : 0,
-          background: `radial-gradient(280px circle at ${position.x}px ${position.y}px, rgba(240,212,168,0.16), transparent 60%)`,
-        }}
-      />
-      <div className="relative">{children}</div>
-    </div>
-  );
+function GlowCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return <div className={`lux-panel-soft rounded-[30px] ${className}`}>{children}</div>;
 }
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState<(typeof CATEGORIES)[number]>("All");
   const [query, setQuery] = useState("");
-  const [pinned, setPinned] = useState<string | null>(null);
 
   const featuredStack = useMemo(
     () => [
@@ -119,35 +83,29 @@ export default function Skills() {
   const filtered = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
-    return SKILLS.filter((skill) => {
-      const matchesCategory =
-        activeCategory === "All" ? true : skill.category === activeCategory;
+      return SKILLS.filter((skill) => {
+        const matchesCategory =
+          activeCategory === "All" ? true : skill.category === activeCategory;
       const matchesQuery = !normalizedQuery
         ? true
         : `${skill.name} ${skill.hint} ${skill.category}`
             .toLowerCase()
             .includes(normalizedQuery);
-
       return matchesCategory && matchesQuery;
     }).sort((a, b) => {
-      if (pinned) {
-        if (a.name === pinned) return -1;
-        if (b.name === pinned) return 1;
-      }
-
       const aFeatured = a.featured ? 1 : 0;
       const bFeatured = b.featured ? 1 : 0;
 
       if (bFeatured !== aFeatured) return bFeatured - aFeatured;
       return b.level - a.level;
     });
-  }, [activeCategory, query, pinned]);
+  }, [activeCategory, query]);
 
   return (
     <section id="skills" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[14%] top-16 h-44 w-44 rounded-full bg-[#d6b07c]/10 blur-3xl" />
-        <div className="absolute right-[8%] top-36 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute left-[14%] top-16 h-44 w-44 rounded-full bg-[#f26b4c]/12 blur-3xl" />
+        <div className="absolute right-[8%] top-36 h-56 w-56 rounded-full bg-[#7fd6c2]/12 blur-3xl" />
       </div>
 
       <div className="section-inner">
@@ -159,103 +117,78 @@ export default function Skills() {
           className="grid gap-8 xl:grid-cols-[0.88fr_1.12fr]"
         >
           <div>
-            <div className="section-kicker">Capability Map</div>
-            <h2 className="section-title mt-7">Learning areas with clearer depth and confidence.</h2>
+            <div className="section-kicker">Skills</div>
+            <h2 className="section-title mt-7">Skills</h2>
           </div>
 
           <p className="section-copy max-w-none xl:pt-14">
-            These tools and disciplines have been strengthened through
-            coursework, certificates, and project delivery. The layout below
-            makes it easier to scan core strengths while still showing where I
-            am actively growing.
+            My strongest skills come from repeated use across coursework,
+            freelance projects, and personal builds. This section keeps the
+            core stack easy to scan while still showing where I am expanding.
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.05 }}
-          viewport={{ once: true }}
-          className="mt-12"
-        >
+        <div className="mt-10 grid gap-4 xl:grid-cols-[1.05fr_0.95fr]">
           <GlowCard className="p-6">
-            <div className="flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <div className="text-sm uppercase tracking-[0.2em] text-white/44">
-                  Core Toolkit
-                </div>
-                <div className="display-font mt-3 text-3xl text-white">
-                  The technologies I reach for most often.
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {featuredStack.map(({ name, Icon }) => (
-                  <div
-                    key={name}
-                    className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-sm text-white/70"
-                    title={name}
-                  >
-                    <span className="inline-flex items-center gap-2">
-                      <Icon className="text-[#f0d4a8]" />
-                      {name}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            <div className="text-sm uppercase tracking-[0.2em] text-white/44">Core Toolkit</div>
+            <div className="display-font mt-3 text-3xl text-white">
+              The technologies I use most often in project work.
             </div>
-          </GlowCard>
-        </motion.div>
-
-        <div className="mt-8 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
-          <GlowCard className="p-5">
-            <div className="text-sm uppercase tracking-[0.2em] text-white/44">Search</div>
-            <div className="mt-3">
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Search learning areas or tools"
-                className="lux-input px-4 py-3"
-              />
-            </div>
-          </GlowCard>
-
-          <GlowCard className="p-5">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="text-sm uppercase tracking-[0.2em] text-white/44">Filter by category</div>
-              {pinned ? (
-                <button
-                  onClick={() => setPinned(null)}
-                  className="text-xs uppercase tracking-[0.18em] text-[#f0d4a8] hover:text-white"
-                  type="button"
+            <div className="mt-6 flex flex-wrap gap-2">
+              {featuredStack.map(({ name, Icon }) => (
+                <div
+                  key={name}
+                  className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-sm text-white/70"
+                  title={name}
                 >
-                  Clear pin: {pinned}
-                </button>
-              ) : null}
+                  <span className="inline-flex items-center gap-2">
+                    <Icon className="text-[#ff9a76]" />
+                    {name}
+                  </span>
+                </div>
+              ))}
             </div>
+          </GlowCard>
 
-            <div className="mt-4 flex flex-wrap gap-2">
-              {CATEGORIES.map((category) => {
-                const active = category === activeCategory;
+          <GlowCard className="p-6">
+            <div className="grid gap-5">
+              <div>
+                <div className="text-sm uppercase tracking-[0.2em] text-white/44">Search and Filter</div>
+                <div className="mt-3">
+                  <input
+                    value={query}
+                    onChange={(event) => setQuery(event.target.value)}
+                    placeholder="Search skills or tools"
+                    className="lux-input px-4 py-3"
+                  />
+                </div>
+              </div>
 
-                return (
-                  <button
-                    key={category}
-                    onClick={() => setActiveCategory(category)}
-                    className={`lux-chip text-sm ${active ? "lux-chip-active" : ""}`}
-                    type="button"
-                  >
-                    {category}
-                  </button>
-                );
-              })}
+              <div>
+                <div className="text-sm uppercase tracking-[0.2em] text-white/44">Categories</div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {CATEGORIES.map((category) => {
+                    const active = category === activeCategory;
+
+                    return (
+                      <button
+                        key={category}
+                        onClick={() => setActiveCategory(category)}
+                        className={`lux-chip text-sm ${active ? "lux-chip-active" : ""}`}
+                        type="button"
+                      >
+                        {category}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </GlowCard>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((skill, index) => {
-            const isPinned = pinned === skill.name;
             const Icon = skill.icon;
 
             return (
@@ -266,13 +199,10 @@ export default function Skills() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: Math.min(index * 0.04, 0.22) }}
               >
-                <GlowCard
-                  onClick={() => setPinned((current) => (current === skill.name ? null : skill.name))}
-                  className={`cursor-pointer p-6 ${isPinned ? "border-[rgba(214,176,124,0.24)]" : ""}`}
-                >
+                <GlowCard className="p-6">
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-start gap-4">
-                      <div className="rounded-[20px] border border-white/10 bg-black/18 p-3 text-lg text-[#f0d4a8]">
+                      <div className="rounded-[20px] border border-white/10 bg-black/18 p-3 text-lg text-[#ff9a76]">
                         {Icon ? <Icon className="h-5 w-5" /> : <span>+</span>}
                       </div>
                       <div>
@@ -283,14 +213,8 @@ export default function Skills() {
                       </div>
                     </div>
 
-                    <span
-                      className={`rounded-full border px-3 py-1 text-xs uppercase tracking-[0.18em] ${
-                        isPinned
-                          ? "border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] text-[#f0d4a8]"
-                          : "border-white/10 bg-black/18 text-white/56"
-                      }`}
-                    >
-                      {isPinned ? "Pinned" : "Pin"}
+                    <span className="rounded-full border border-white/10 bg-black/18 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white/56">
+                      {clamp(skill.level, 0, 100)}%
                     </span>
                   </div>
 
@@ -308,14 +232,14 @@ export default function Skills() {
                         whileInView={{ width: `${clamp(skill.level, 0, 100)}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="h-full rounded-full bg-[linear-gradient(90deg,#f0d4a8_0%,#d6b07c_48%,#7cc7c1_100%)]"
+                        className="h-full rounded-full bg-[linear-gradient(90deg,#f26b4c_0%,#ff9a76_48%,#7fd6c2_100%)]"
                       />
                     </div>
                   </div>
 
                   <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-white/42">
-                    <span>{isPinned ? "Saved for quick review" : "Click card to pin"}</span>
                     <span>Coursework + projects</span>
+                    <span>{skill.featured ? "Core strength" : "Growing area"}</span>
                   </div>
                 </GlowCard>
               </motion.div>

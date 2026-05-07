@@ -112,8 +112,8 @@ export default function ReflectiveJournal() {
   return (
     <section id="reflective" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[10%] top-20 h-48 w-48 rounded-full bg-[#d6b07c]/10 blur-3xl" />
-        <div className="absolute right-[6%] top-24 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute left-[10%] top-20 h-48 w-48 rounded-full bg-[#f26b4c]/12 blur-3xl" />
+        <div className="absolute right-[6%] top-24 h-56 w-56 rounded-full bg-[#7fd6c2]/12 blur-3xl" />
       </div>
 
       <div className="section-inner">
@@ -126,17 +126,16 @@ export default function ReflectiveJournal() {
         >
           <div className="section-kicker">
             <FiBookOpen />
-            PPW Reflection
+            Journal
           </div>
-          <h2 className="section-title mt-7">Reflective learning presented with stronger clarity.</h2>
+          <h2 className="section-title mt-7">Journal</h2>
           <p className="section-copy mt-6">
-            These weekly notes summarize what I learned during PPW, how those
-            lessons were applied to my portfolio and career thinking, and what
-            I plan to improve next.
+            These weekly notes capture what I learned during PPW, how those
+            lessons influenced the portfolio, and what I want to improve next.
           </p>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 xl:grid-cols-[0.38fr_0.62fr]">
+        <div className="mt-10 grid gap-8 xl:grid-cols-[0.38fr_0.62fr]">
           <motion.div
             initial={{ opacity: 0, x: -18 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -145,7 +144,7 @@ export default function ReflectiveJournal() {
           >
             <div className="lux-panel rounded-[32px] p-4 md:p-5">
               <div className="px-2 pb-3 text-sm uppercase tracking-[0.22em] text-white/42">
-                Select Week
+                Journal Index
               </div>
 
               <div className="space-y-2">
@@ -158,8 +157,8 @@ export default function ReflectiveJournal() {
                       onClick={() => setActive(index)}
                       className={`w-full rounded-[22px] border px-4 py-4 text-left transition ${
                         selected
-                          ? "border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] text-white"
-                          : "border-white/10 bg-black/18 text-white/74 hover:border-[rgba(124,199,193,0.22)]"
+                          ? "border-[rgba(242,107,76,0.24)] bg-[rgba(242,107,76,0.12)] text-white"
+                          : "border-white/10 bg-black/18 text-white/74 hover:border-[rgba(127,214,194,0.22)]"
                       }`}
                       type="button"
                     >
@@ -170,7 +169,7 @@ export default function ReflectiveJournal() {
                           </div>
                           <div className="mt-2 font-semibold">{entry.title}</div>
                         </div>
-                        {selected ? <FiCheckCircle className="mt-1 text-[#f0d4a8]" /> : null}
+                        {selected ? <FiCheckCircle className="mt-1 text-[#ff9a76]" /> : null}
                       </div>
                     </button>
                   );
@@ -188,7 +187,7 @@ export default function ReflectiveJournal() {
             <div className="lux-panel rounded-[34px] p-7 md:p-8">
               <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                 <div>
-                  <div className="text-sm uppercase tracking-[0.22em] text-[#f0d4a8]/78">
+                  <div className="text-sm uppercase tracking-[0.22em] text-[#ff9a76]">
                     {current.week}
                   </div>
                   <h3 className="display-font mt-3 text-4xl text-white">{current.title}</h3>
@@ -200,13 +199,22 @@ export default function ReflectiveJournal() {
                 </div>
               </div>
 
+              <div className="mt-6 flex flex-wrap gap-2">
+                <div className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/56">
+                  Learning captured weekly
+                </div>
+                <div className="rounded-full border border-white/10 bg-black/18 px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/56">
+                  Application + reflection
+                </div>
+              </div>
+
               <div className="mt-8 grid gap-6 md:grid-cols-2">
                 <div className="rounded-[26px] border border-white/10 bg-black/18 p-5">
                   <div className="text-sm uppercase tracking-[0.2em] text-white/42">What I learned</div>
                   <ul className="mt-4 space-y-3 text-white/70">
                     {current.learned.map((item) => (
                       <li key={item} className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#f0d4a8]" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#ff9a76]" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -218,7 +226,7 @@ export default function ReflectiveJournal() {
                   <ul className="mt-4 space-y-3 text-white/70">
                     {current.evidence.map((item) => (
                       <li key={item} className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7fd6c2]" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -226,8 +234,8 @@ export default function ReflectiveJournal() {
                 </div>
               </div>
 
-              <div className="mt-6 rounded-[28px] border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] p-5">
-                <div className="text-sm uppercase tracking-[0.2em] text-[#f0d4a8]">Reflection</div>
+              <div className="mt-6 rounded-[28px] border border-[rgba(242,107,76,0.24)] bg-[rgba(242,107,76,0.12)] p-5">
+                <div className="text-sm uppercase tracking-[0.2em] text-[#ff9a76]">Reflection</div>
                 <p className="mt-3 leading-8 text-white/76">{current.reflection}</p>
               </div>
 
@@ -236,7 +244,7 @@ export default function ReflectiveJournal() {
                 <ul className="mt-4 space-y-3 text-white/70">
                   {current.nextSteps.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7fd6c2]" />
                       <span>{item}</span>
                     </li>
                   ))}

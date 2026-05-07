@@ -1,23 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --background: #071015;
-  --foreground: #f6f0e7;
-  --muted: rgba(246, 240, 231, 0.82);
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(214, 176, 124, 0.32);
-  --panel: rgba(8, 12, 17, 0.92);
-  --panel-strong: rgba(5, 8, 12, 0.98);
-  --surface: rgba(12, 18, 24, 0.82);
-  --surface-strong: rgba(18, 27, 35, 0.9);
-  --accent: #d6b07c;
-  --accent-strong: #f0d4a8;
-  --accent-cool: #7cc7c1;
-  --shadow: 0 26px 90px rgba(0, 0, 0, 0.45);
+  --background: #0d1113;
+  --foreground: #f7efe3;
+  --muted: rgba(234, 220, 201, 0.72);
+  --line: rgba(255, 241, 222, 0.1);
+  --line-strong: rgba(242, 107, 76, 0.28);
+  --panel: rgba(19, 24, 28, 0.9);
+  --panel-strong: rgba(16, 19, 22, 0.96);
+  --surface: rgba(30, 36, 41, 0.76);
+  --surface-strong: rgba(22, 27, 31, 0.92);
+  --accent: #f26b4c;
+  --accent-strong: #ff9a76;
+  --accent-cool: #7fd6c2;
+  --accent-soft: #ffd7a3;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
   --font-sans-stack: "Avenir Next", "Segoe UI", "Helvetica Neue", "Trebuchet MS",
     sans-serif;
   --font-display-stack: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
-    "Baskerville", Georgia, serif;
+    Georgia, serif;
   --font-mono-stack: "SFMono-Regular", "JetBrains Mono", Consolas, monospace;
 }
 
@@ -35,9 +36,10 @@
 html {
   scroll-behavior: smooth;
   background:
-    radial-gradient(circle at top left, rgba(214, 176, 124, 0.18), transparent 24%),
-    radial-gradient(circle at 85% 18%, rgba(124, 199, 193, 0.14), transparent 22%),
-    linear-gradient(180deg, #081117 0%, #04080c 100%);
+    radial-gradient(circle at 8% 8%, rgba(242, 107, 76, 0.12), transparent 24%),
+    radial-gradient(circle at 88% 12%, rgba(127, 214, 194, 0.1), transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(255, 215, 163, 0.06), transparent 28%),
+    linear-gradient(180deg, #101517 0%, #090c0f 100%);
   background-color: var(--background);
   color-scheme: dark;
 }
@@ -46,14 +48,15 @@ body {
   position: relative;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(214, 176, 124, 0.14), transparent 22%),
-    radial-gradient(circle at 85% 18%, rgba(124, 199, 193, 0.12), transparent 20%),
-    radial-gradient(circle at 50% 100%, rgba(214, 176, 124, 0.08), transparent 30%),
-    linear-gradient(180deg, #081117 0%, #04080c 100%);
+    radial-gradient(circle at 12% 0%, rgba(242, 107, 76, 0.12), transparent 18%),
+    radial-gradient(circle at 88% 14%, rgba(127, 214, 194, 0.08), transparent 16%),
+    radial-gradient(circle at 50% 100%, rgba(255, 215, 163, 0.05), transparent 24%),
+    linear-gradient(180deg, #101517 0%, #090c0f 100%);
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans-stack);
   text-rendering: optimizeLegibility;
+  letter-spacing: -0.01em;
 }
 
 body::before,
@@ -67,19 +70,19 @@ body::after {
 body::before {
   z-index: -2;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.024) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.024) 1px, transparent 1px);
+    linear-gradient(rgba(255, 245, 232, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 245, 232, 0.018) 1px, transparent 1px);
   background-size: 96px 96px;
-  mask-image: radial-gradient(circle at center, black 40%, transparent 88%);
-  opacity: 0.32;
+  mask-image: radial-gradient(circle at center, black 44%, transparent 86%);
+  opacity: 0.24;
 }
 
 body::after {
   z-index: -3;
   background:
-    radial-gradient(circle at top left, rgba(214, 176, 124, 0.08), transparent 28%),
-    radial-gradient(circle at 85% 18%, rgba(124, 199, 193, 0.07), transparent 24%),
-    radial-gradient(circle at 50% 100%, rgba(214, 176, 124, 0.05), transparent 34%);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.016), transparent 36%),
+    radial-gradient(circle at top left, rgba(242, 107, 76, 0.05), transparent 30%),
+    radial-gradient(circle at 85% 18%, rgba(127, 214, 194, 0.05), transparent 24%);
 }
 
 a,
@@ -95,8 +98,8 @@ textarea {
 }
 
 ::selection {
-  background: rgba(214, 176, 124, 0.26);
-  color: #fff;
+  background: rgba(242, 107, 76, 0.36);
+  color: #fff7ee;
 }
 
 main {
@@ -105,7 +108,7 @@ main {
 }
 
 section[id] {
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 6.5rem;
 }
 
 .page-shell::before {
@@ -115,9 +118,8 @@ section[id] {
   pointer-events: none;
   z-index: -1;
   background:
-    radial-gradient(circle at 12% 10%, rgba(214, 176, 124, 0.08), transparent 20%),
-    radial-gradient(circle at 88% 14%, rgba(124, 199, 193, 0.06), transparent 18%),
-    radial-gradient(circle at 50% 48%, rgba(255, 255, 255, 0.018), transparent 26%);
+    radial-gradient(circle at 12% 10%, rgba(242, 107, 76, 0.08), transparent 18%),
+    radial-gradient(circle at 88% 14%, rgba(127, 214, 194, 0.06), transparent 16%);
 }
 
 .page-shell {
@@ -127,7 +129,7 @@ section[id] {
 
 .section-shell {
   position: relative;
-  padding: 6rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 .section-inner {
@@ -141,28 +143,37 @@ section[id] {
   align-items: center;
   gap: 0.625rem;
   border-radius: 999px;
-  border: 1px solid var(--line-strong);
-  background: rgba(214, 176, 124, 0.08);
+  border: 1px solid rgba(255, 235, 208, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(242, 107, 76, 0.1),
+    rgba(255, 215, 163, 0.08) 50%,
+    rgba(127, 214, 194, 0.08)
+  );
   padding: 0.72rem 1rem;
-  color: var(--accent-strong);
+  color: rgba(251, 240, 224, 0.92);
   font-size: 0.76rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .section-title {
   font-family: var(--font-display-stack);
-  font-size: clamp(2.85rem, 7vw, 5.4rem);
-  line-height: 0.92;
-  letter-spacing: -0.05em;
-  color: #faf4ea;
+  font-size: clamp(2.9rem, 7vw, 5.6rem);
+  line-height: 0.93;
+  letter-spacing: -0.045em;
+  color: #fbf3e7;
   text-wrap: balance;
 }
 
 .section-copy {
   max-width: 48rem;
   color: var(--muted);
-  line-height: 1.78;
+  line-height: 1.82;
+  font-size: 1.02rem;
 }
 
 .section-rule {
@@ -171,27 +182,32 @@ section[id] {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(214, 176, 124, 0.35) 50%,
+    rgba(242, 107, 76, 0.28) 34%,
+    rgba(127, 214, 194, 0.2) 66%,
     transparent 100%
   );
 }
 
 .lux-panel {
-  background: linear-gradient(180deg, rgba(13, 20, 26, 0.96), rgba(6, 10, 14, 0.97));
-  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at top left, rgba(242, 107, 76, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(23, 29, 33, 0.96), rgba(14, 18, 21, 0.96));
+  border: 1px solid rgba(255, 241, 222, 0.08);
   box-shadow:
     var(--shadow),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px) saturate(120%);
 }
 
 .lux-panel-soft {
-  background: linear-gradient(180deg, rgba(16, 24, 31, 0.93), rgba(9, 14, 19, 0.94));
-  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at top left, rgba(255, 215, 163, 0.06), transparent 30%),
+    linear-gradient(180deg, rgba(27, 32, 36, 0.92), rgba(17, 21, 24, 0.94));
+  border: 1px solid rgba(255, 241, 222, 0.08);
   box-shadow:
     var(--shadow),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(22px);
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(22px) saturate(120%);
 }
 
 .lux-button-primary,
@@ -206,15 +222,25 @@ section[id] {
 }
 
 .lux-button-primary {
-  background: linear-gradient(135deg, var(--accent-strong), var(--accent-cool));
-  color: #041017;
-  box-shadow: 0 18px 44px rgba(214, 176, 124, 0.18);
+  background: linear-gradient(135deg, rgba(242, 107, 76, 0.94), rgba(255, 154, 118, 0.96));
+  color: #fff8f2;
+  box-shadow: 0 16px 34px rgba(140, 61, 39, 0.28);
 }
 
 .lux-button-secondary {
-  border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.06);
-  color: #f8f2e8;
+  border: 1px solid rgba(255, 240, 221, 0.12);
+  background: rgba(255, 250, 243, 0.035);
+  color: #f9f0e2;
+}
+
+.lux-button-primary:hover,
+.lux-button-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.lux-button-secondary:hover {
+  border-color: rgba(127, 214, 194, 0.3);
+  background: rgba(127, 214, 194, 0.08);
 }
 
 .lux-chip {
@@ -222,59 +248,65 @@ section[id] {
   align-items: center;
   gap: 0.5rem;
   border-radius: 999px;
-  border: 1px solid var(--line);
-  background: rgba(12, 18, 24, 0.86);
+  border: 1px solid rgba(255, 241, 222, 0.08);
+  background: rgba(255, 248, 240, 0.03);
   padding: 0.6rem 1rem;
-  color: rgba(246, 240, 231, 0.84);
+  color: rgba(247, 239, 227, 0.82);
 }
 
 .lux-chip-active {
-  border-color: var(--line-strong);
-  background: rgba(214, 176, 124, 0.16);
-  color: var(--accent-strong);
+  border-color: rgba(242, 107, 76, 0.22);
+  background: rgba(242, 107, 76, 0.12);
+  color: var(--accent-soft);
 }
 
 .lux-input {
   width: 100%;
   border-radius: 1rem;
   border: 1px solid var(--line);
-  background: rgba(6, 10, 14, 0.74);
-  color: #faf4ea;
+  background: rgba(15, 19, 22, 0.88);
+  color: #f7efe3;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .lux-input::placeholder {
-  color: rgba(246, 240, 231, 0.38);
+  color: rgba(235, 219, 199, 0.34);
 }
 
 .lux-input:focus {
   outline: none;
-  border-color: rgba(124, 199, 193, 0.55);
-  box-shadow: 0 0 0 4px rgba(124, 199, 193, 0.12);
+  border-color: rgba(242, 107, 76, 0.34);
+  box-shadow: 0 0 0 4px rgba(242, 107, 76, 0.1);
 }
 
 .text-glow {
-  text-shadow: 0 0 28px rgba(214, 176, 124, 0.22);
+  text-shadow: none;
 }
 
 .display-font {
   font-family: var(--font-display-stack);
 }
 
+@media (min-width: 768px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
+
 [class~="bg-white/[0.03]"] {
-  background-color: rgba(14, 21, 27, 0.78) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
 }
 
 [class~="bg-white/4"] {
-  background-color: rgba(14, 21, 27, 0.72) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
 }
 
 [class~="bg-black/18"] {
-  background-color: rgba(9, 14, 19, 0.82) !important;
+  background: rgba(7, 9, 17, 0.82) !important;
 }
 
 [class~="bg-black/20"] {
-  background-color: rgba(9, 14, 19, 0.88) !important;
+  background: rgba(7, 9, 17, 0.88) !important;
 }
 
 [class~="text-white/34"] {
@@ -327,6 +359,6 @@ section[id] {
 
 @media (min-width: 768px) {
   .section-shell {
-    padding-block: 7rem;
+    padding-block: 5.5rem;
   }
 }

@@ -42,7 +42,7 @@ export default function Contact() {
     },
     {
       label: "QR Code",
-      value: "Scan to connect quickly",
+      value: "Scan for a quick visit",
       href: qrCodeSrc,
       icon: IoQrCodeOutline,
       openInNewTab: true,
@@ -52,8 +52,8 @@ export default function Contact() {
   return (
     <section id="contact" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[10%] top-10 h-48 w-48 rounded-full bg-[#d6b07c]/10 blur-3xl" />
-        <div className="absolute right-[8%] top-24 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute left-[10%] top-10 h-48 w-48 rounded-full bg-[#f26b4c]/12 blur-3xl" />
+        <div className="absolute right-[8%] top-24 h-56 w-56 rounded-full bg-[#7fd6c2]/12 blur-3xl" />
       </div>
 
       <div className="section-inner">
@@ -66,17 +66,17 @@ export default function Contact() {
         >
           <div>
             <div className="section-kicker">Contact</div>
-            <h2 className="section-title mt-7">A cleaner way to connect around projects, feedback, and collaboration.</h2>
+            <h2 className="section-title mt-7">Contact</h2>
           </div>
 
           <p className="section-copy max-w-none xl:pt-14">
-            Reach out for portfolio feedback, academic discussion, or future
-            collaboration in software engineering. The contact area is now
-            structured like the rest of the portfolio and easier to scan.
+            I&apos;m happy to hear from recruiters, collaborators, lecturers, and
+            peers who want to discuss project work, software engineering, or
+            future opportunities.
           </p>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
+        <div className="mt-10 grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -84,11 +84,11 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="lux-panel rounded-[34px] p-7"
           >
-            <div className="text-sm uppercase tracking-[0.2em] text-white/42">Contact Information</div>
-            <h3 className="display-font mt-4 text-4xl text-white">Main channels I use.</h3>
+            <div className="text-sm uppercase tracking-[0.2em] text-white/42">Reach Me Here</div>
+            <h3 className="display-font mt-4 text-4xl text-white">The easiest ways to start a conversation.</h3>
             <p className="mt-4 leading-8 text-white/68">
-              These are the best ways to reach me for academic discussions,
-              project feedback, and future technical collaboration.
+              Whether it&apos;s feedback on the portfolio, a project opportunity,
+              or a junior software role, these are the channels I check most.
             </p>
 
             <ul className="mt-8 space-y-4">
@@ -103,7 +103,7 @@ export default function Contact() {
                     className="rounded-[24px] border border-white/10 bg-black/18 px-4 py-4"
                   >
                     <div className="flex items-start gap-4">
-                      <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] text-[#f0d4a8]">
+                      <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[rgba(242,107,76,0.24)] bg-[rgba(242,107,76,0.12)] text-[#ff9a76]">
                         <Icon className="h-5 w-5" />
                       </span>
 
@@ -136,22 +136,37 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.08 }}
             className="lux-panel-soft rounded-[34px] p-7"
           >
-            <div className="text-sm uppercase tracking-[0.2em] text-white/42">Let&apos;s Connect</div>
-            <h3 className="display-font mt-4 text-4xl text-white">Open to feedback and thoughtful conversations.</h3>
+            <div className="text-sm uppercase tracking-[0.2em] text-white/42">Collaboration Style</div>
+            <h3 className="display-font mt-4 text-4xl text-white">Curious, responsive, and excited to keep improving.</h3>
             <p className="mt-4 leading-8 text-white/68">
-              I welcome conversations around academic projects, portfolio
-              reviews, technical learning, and future software engineering
-              opportunities.
+              I value conversations that are practical, respectful, and
+              growth-oriented. If there&apos;s something useful we can build or
+              improve together, I&apos;m interested.
             </p>
 
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              {[
+                "Open to internships",
+                "Happy to discuss project work",
+                "Usually replies within 24 hours",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[22px] border border-white/10 bg-black/18 px-4 py-4 text-sm text-white/72"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
             <div className="mt-8 rounded-[28px] border border-white/10 bg-black/18 p-5">
-              <div className="text-sm uppercase tracking-[0.2em] text-white/42">Best reasons to reach out</div>
+              <div className="text-sm uppercase tracking-[0.2em] text-white/42">Good reasons to reach out</div>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Portfolio feedback",
-                  "Academic project discussion",
-                  "Peer learning and collaboration",
-                  "Technical networking",
+                  "Internship or junior role discussion",
+                  "Portfolio or project feedback",
+                  "Frontend and full-stack collaboration",
+                  "Academic or peer learning conversations",
                 ].map((item) => (
                   <div
                     key={item}
@@ -165,7 +180,7 @@ export default function Contact() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="mailto:nimthera2380@gmail.com?subject=Academic%20Portfolio%20Inquiry"
+                href="mailto:nimthera2380@gmail.com?subject=Portfolio%20Inquiry"
                 className="lux-button-primary"
               >
                 Send Email
@@ -177,7 +192,7 @@ export default function Contact() {
                 rel="noreferrer"
                 className="lux-button-secondary"
               >
-                Connect on LinkedIn
+                Open LinkedIn
               </a>
             </div>
 
@@ -187,12 +202,12 @@ export default function Contact() {
                   <div className="text-sm uppercase tracking-[0.2em] text-white/42">GitHub QR</div>
                   <h4 className="display-font mt-3 text-3xl text-white">Scan for a quick profile visit.</h4>
                   <p className="mt-3 text-sm leading-7 text-white/60">
-                    Scan this code to open my GitHub profile instantly on mobile.
+                    This opens my GitHub profile directly on mobile for a fast look at repositories and activity.
                   </p>
                 </div>
 
                 <div className="hidden rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/52 md:block">
-                  24h reply window
+                  fast follow-up
                 </div>
               </div>
 

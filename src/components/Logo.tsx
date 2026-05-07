@@ -31,9 +31,9 @@ export default function SignatureLogo({
       >
         <defs>
           <linearGradient id="sigBadge" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#f0d4a8" />
-            <stop offset="52%" stopColor="#d6b07c" />
-            <stop offset="100%" stopColor="#7cc7c1" />
+            <stop offset="0%" stopColor="#ffd7a3" />
+            <stop offset="48%" stopColor="#f26b4c" />
+            <stop offset="100%" stopColor="#7fd6c2" />
           </linearGradient>
 
           <linearGradient id="sigStroke" x1="0" y1="0" x2="1" y2="0">
@@ -135,7 +135,7 @@ export default function SignatureLogo({
             Nimthera Gunasena
           </div>
           <div className="text-[0.68rem] uppercase tracking-[0.24em] text-white/48">
-            Portfolio Edition
+            Software Portfolio
           </div>
         </div>
       ) : null}

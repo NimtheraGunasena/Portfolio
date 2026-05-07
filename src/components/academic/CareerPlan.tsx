@@ -8,7 +8,7 @@ const goalGroups = [
     title: "Short-Term",
     span: "1-2 years",
     icon: FiClock,
-    accent: "text-[#f0d4a8]",
+    accent: "text-[#ff9a76]",
     items: [
       "Maintain strong academic performance",
       "Complete polished portfolio and capstone-style projects",
@@ -21,7 +21,7 @@ const goalGroups = [
     title: "Mid-Term",
     span: "3-5 years",
     icon: FiTrendingUp,
-    accent: "text-[#7cc7c1]",
+    accent: "text-[#7fd6c2]",
     items: [
       "Become a dependable full-stack engineer",
       "Lead small features and smoother team delivery",
@@ -49,8 +49,8 @@ export default function CareerPlan() {
   return (
     <section id="career-plan" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute right-[12%] top-12 h-52 w-52 rounded-full bg-[#d6b07c]/10 blur-3xl" />
-        <div className="absolute left-[8%] top-36 h-56 w-56 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
+        <div className="absolute right-[12%] top-12 h-52 w-52 rounded-full bg-[#f26b4c]/12 blur-3xl" />
+        <div className="absolute left-[8%] top-36 h-56 w-56 rounded-full bg-[#7fd6c2]/12 blur-3xl" />
       </div>
 
       <div className="section-inner">
@@ -62,19 +62,19 @@ export default function CareerPlan() {
           className="grid gap-8 xl:grid-cols-[0.92fr_1.08fr]"
         >
           <div>
-            <div className="section-kicker">Career Roadmap</div>
-            <h2 className="section-title mt-7">A clearer plan from academic progress to industry readiness.</h2>
+            <div className="section-kicker">Career Plan</div>
+            <h2 className="section-title mt-7">Career Plan</h2>
           </div>
 
           <p className="section-copy max-w-none xl:pt-14">
-            This roadmap connects my current academic work to the technical and
-            professional capabilities I want to build over time. It keeps the
-            path grounded, measurable, and aligned with software engineering
-            expectations.
+            My career plan connects current study and project work to the
+            technical and professional strengths I want to build over time. It
+            keeps the path practical, measurable, and aligned with software
+            engineering expectations.
           </p>
         </motion.div>
 
-        <div className="mt-12 grid gap-6 xl:grid-cols-3">
+        <div className="mt-10 grid gap-6 xl:grid-cols-3">
           {goalGroups.map(({ title, span, icon: Icon, accent, items }, index) => (
             <motion.div
               key={title}
@@ -96,7 +96,7 @@ export default function CareerPlan() {
               <ul className="mt-6 space-y-3 text-white/70">
                 {items.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#f0d4a8]" />
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#ff9a76]" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -105,12 +105,27 @@ export default function CareerPlan() {
           ))}
         </div>
 
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          {[
+            { label: "Short-Term Goal", value: "Polished delivery" },
+            { label: "Mid-Term Goal", value: "Team-ready engineer" },
+            { label: "Long-Term Goal", value: "Scalable product impact" },
+          ].map((item) => (
+            <div key={item.label} className="lux-panel-soft rounded-[28px] px-5 py-5">
+              <div className="display-font text-2xl text-white">{item.value}</div>
+              <div className="mt-2 text-xs uppercase tracking-[0.22em] text-white/44">
+                {item.label}
+              </div>
+            </div>
+          ))}
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.08 }}
           viewport={{ once: true }}
-          className="lux-panel mt-10 rounded-[36px] p-7 md:p-8"
+          className="lux-panel mt-8 rounded-[36px] p-7 md:p-8"
         >
           <div className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
             <div>
@@ -141,7 +156,7 @@ export default function CareerPlan() {
                     "Performance optimization and monitoring",
                   ].map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7fd6c2]" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -160,7 +175,7 @@ export default function CareerPlan() {
                     "Seek mentorship and regular feedback",
                   ].map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#f0d4a8]" />
+                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#ff9a76]" />
                       <span>{item}</span>
                     </li>
                   ))}

@@ -17,57 +17,45 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Grocery Delivery App",
+    title: "Product Service",
     description:
-      "A microservices-based grocery delivery application built with the MERN stack, focused on scalable architecture, separated services, and a smoother customer ordering flow.",
-    tech: ["JavaScript", "MERN", "React", "Node.js", "MongoDB"],
-    github: "https://github.com/yasasArt/Grocery-Delivery-Microservices.git",
+      "A full-stack product catalog and ordering system built with React, Node.js, and MongoDB, designed to practice service-oriented architecture and frontend-backend separation.",
+    tech: ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/NimtheraGunasena/Product-service.git",
     highlights: [
-      "Frontend and backend separation",
-      "Catalog and shopping flow structure",
-      "Applied microservices architecture practice",
+      "Implemented a clean separation between frontend and backend",
+      "Designed a simple product catalog with ordering functionality",
+      "Focused on architecture and code organization for maintainability",
     ],
-    status: "Featured build",
+    status: "Architecture-focused build",
   },
   {
-    title: "Job Change Predictor",
+    title: "Hostel Nest",
     description:
-      "A machine learning project that predicts job changes from employee data, combining data preparation, modeling, and evaluation to surface useful patterns about career transitions.",
-    tech: ["JavaScript", "React", "Node.js", "Docker", "MongoDB"],
-    github: "https://github.com/asitha-dharmarathne/Job-Change-Prediction-Using-Supervised-Learning.git",
+      "A machine learning project exploring supervised learning techniques to predict student satisfaction based on hostel features and feedback data.",
+    tech: ["Python", "scikit-learn", "Pandas", "Matplotlib"],
+    github: "https://github.com/NimtheraGunasena/Hostel-Nest.git",
     highlights: [
-      "Data preprocessing and feature engineering",
-      "Multiple supervised learning algorithms",
-      "Model evaluation with metrics and visualizations",
+      "Applied data preprocessing and feature engineering to real-world data",
+      "Experimented with multiple supervised learning algorithms",
+      "Visualized results to understand model performance and insights",
     ],
-    status: "Data-driven project",
+    status: "Applied machine learning experiment",
   },
   {
-    title: "Learning Plus",
+    title: "Portfolio",
     description:
-      "A Python-based applied computing project focused on image upload, transformation, and real-time experimentation with image-processing concepts.",
-    tech: ["Python", "Jupyter Notebook", "OpenCV", "NumPy"],
-    github: "https://github.com/asitha-dharmarathne/learning-plus.git",
+      "A personal portfolio website showcasing projects, skills, and experience.",
+    tech: ["TypeScript", "React", "Next.js", "Framer Motion"],
+    github: "https://github.com/NimtheraGunasena/Portfolio.git",
     highlights: [
-      "Image manipulation techniques",
-      "Interactive experimentation with processing concepts",
-      "Applied computing principles in a practical workflow",
+      "Designed and developed a responsive portfolio website",
+      "Showcased projects with interactive elements and animations",
+      "Focused on clean design and user experience",
     ],
-    status: "Technical exploration",
+    status: "Technical experiment",
   },
-  {
-    title: "My Todo App",
-    description:
-      "A simple task manager built with Python and Flask to practice CRUD flows, clean interaction patterns, and lightweight full-stack delivery.",
-    tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
-    github: "https://github.com/UchithChethana/MyTodoApp.git",
-    highlights: [
-      "Simple productivity-focused UI",
-      "CRUD task workflow with backend routing",
-      "Useful project for refining fundamentals",
-    ],
-    status: "Foundation project",
-  },
+  
 ];
 
 function uniq<T>(arr: T[]) {
@@ -106,8 +94,8 @@ export default function Projects() {
   return (
     <section id="projects" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[10%] top-20 h-52 w-52 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
-        <div className="absolute right-[8%] top-16 h-60 w-60 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute left-[10%] top-20 h-52 w-52 rounded-full bg-[#7fd6c2]/12 blur-3xl" />
+        <div className="absolute right-[8%] top-16 h-60 w-60 rounded-full bg-[#f26b4c]/12 blur-3xl" />
       </div>
 
       <div className="section-inner">
@@ -119,15 +107,15 @@ export default function Projects() {
           className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]"
         >
           <div>
-            <div className="section-kicker">Selected Work</div>
-            <h2 className="section-title mt-7">Projects that turn study into delivery.</h2>
+            <div className="section-kicker">Projects</div>
+            <h2 className="section-title mt-7">Projects</h2>
           </div>
 
           <div className="flex flex-col justify-end">
             <p className="section-copy max-w-none">
-              These projects show how coursework has been translated into
-              software practice across full-stack architecture, machine
-              learning, and applied Python experimentation.
+              These projects span full-stack delivery, applied machine
+              learning, and Python experimentation. Together they show how I
+              turn technical learning into more complete products.
             </p>
 
             <div className="mt-7 lux-panel rounded-[30px] p-4 md:p-5">
@@ -137,7 +125,7 @@ export default function Projects() {
                   <input
                     value={query}
                     onChange={(event) => setQuery(event.target.value)}
-                    placeholder="Search projects, tools, or technologies"
+                    placeholder="Search by project, stack, or focus"
                     className="lux-input py-3 pl-11 pr-10"
                   />
                   {query ? (
@@ -172,19 +160,34 @@ export default function Projects() {
           </div>
         </motion.div>
 
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          {[
+            { label: "Projects Shown", value: `${filtered.length}` },
+            { label: "Main Strength", value: "Frontend + Full Stack" },
+            { label: "Design Goal", value: "Useful and polished" },
+          ].map((item) => (
+            <div key={item.label} className="lux-panel-soft rounded-[28px] px-5 py-5">
+              <div className="display-font text-2xl text-white">{item.value}</div>
+              <div className="mt-2 text-xs uppercase tracking-[0.22em] text-white/44">
+                {item.label}
+              </div>
+            </div>
+          ))}
+        </div>
+
         {featured ? (
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.06 }}
-            className="lux-panel mt-12 overflow-hidden rounded-[36px] p-6 md:p-8"
+            className="lux-panel mt-10 overflow-hidden rounded-[36px] p-6 md:p-8"
           >
             <div className="grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
               <div>
                 <div className="flex flex-wrap items-center gap-3">
-                  <span className="section-kicker border-[rgba(124,199,193,0.22)] bg-[rgba(124,199,193,0.08)] text-[#7cc7c1]">
-                    Featured Project
+                  <span className="section-kicker border-[rgba(127,214,194,0.24)] bg-[rgba(127,214,194,0.1)] text-[#7fd6c2]">
+                    Featured Case Study
                   </span>
                   <span className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/50">
                     {featured.status}
@@ -213,18 +216,29 @@ export default function Projects() {
               <div className="flex flex-col justify-between gap-6 rounded-[28px] border border-white/10 bg-white/[0.03] p-6">
                 <div>
                   <div className="text-sm uppercase tracking-[0.22em] text-white/44">
-                    Technology Stack
+                    Stack And Focus
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {featured.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="rounded-full border border-[rgba(214,176,124,0.22)] bg-[rgba(214,176,124,0.08)] px-4 py-2 text-sm text-[#f0d4a8]"
+                        className="rounded-full border border-[rgba(242,107,76,0.24)] bg-[rgba(242,107,76,0.12)] px-4 py-2 text-sm text-[#ff9a76]"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
+                </div>
+
+                <div className="rounded-[24px] border border-white/10 bg-black/18 p-5">
+                  <div className="text-sm uppercase tracking-[0.2em] text-white/44">
+                    Why it matters
+                  </div>
+                  <p className="mt-3 leading-8 text-white/70">
+                    This project best captures how I combine architecture,
+                    usability, and project structure into a stronger final
+                    result.
+                  </p>
                 </div>
 
                 <div className="grid gap-3">
@@ -297,7 +311,7 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover:text-[#f0d4a8]"
+                          className="hover:text-[#ff9a76]"
                           aria-label={`${project.title} GitHub`}
                         >
                           <FaGithub />
@@ -308,7 +322,7 @@ export default function Projects() {
                           href={project.live}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover:text-[#7cc7c1]"
+                          className="hover:text-[#7fd6c2]"
                           aria-label={`${project.title} live demo`}
                         >
                           <FiExternalLink />
@@ -323,7 +337,7 @@ export default function Projects() {
 
                   <button
                     onClick={() => setExpanded(isExpanded ? null : project.title)}
-                    className="mt-5 text-sm uppercase tracking-[0.2em] text-[#f0d4a8] hover:text-white"
+                    className="mt-5 text-sm uppercase tracking-[0.2em] text-[#ff9a76] hover:text-white"
                     type="button"
                   >
                     {isExpanded ? "Collapse details" : "Read more"}
@@ -356,7 +370,7 @@ export default function Projects() {
                           <ul className="mt-3 space-y-2 text-sm text-white/72">
                             {project.highlights.map((highlight) => (
                               <li key={highlight} className="flex gap-3">
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7cc7c1]" />
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#7fd6c2]" />
                                 <span>{highlight}</span>
                               </li>
                             ))}

@@ -42,62 +42,19 @@ export default function Certificates() {
         skillImproved: "Python fundamentals",
         proof:
           "Strengthened core Python syntax, data types, control flow, and problem solving.",
-        file: "/certificates/cer2.jpeg",
+        file: "/certificates/Cer3.pdf",
       },
       {
-        title: "Python for Beginners",
-        issuer: "University of Moratuwa",
+        title: "Frontend Software Development",
+        issuer: "Forage",
         date: "2024",
         type: "Technical",
-        skillImproved: "Python programming practice",
+        skillImproved: "Frontend development with React",
         proof: "Improved hands-on programming and writing cleaner, reusable code.",
-        file: "/certificates/cer3.jpeg",
+        file: "/certificates/Cer2.pdf",
       },
-      {
-        title: "Adobe Photoshop Advanced",
-        issuer: "Photoshop",
-        date: "2022",
-        type: "Technical",
-        skillImproved: "Image editing practice",
-        proof: "Expanded visual editing skills and improved creative presentation techniques.",
-        file: "/certificates/cer1.jpeg",
-      },
-      {
-        title: "Higher Diploma in Information Technology",
-        issuer: "SLIIT",
-        date: "2024",
-        type: "Technical",
-        skillImproved: "Information technology foundations",
-        proof: "Built a stronger academic base across software, systems, and technical problem-solving.",
-        file: "/certificates/cer4.jpeg",
-      },
-      {
-        title: "CodeFest Competition",
-        issuer: "SLIIT",
-        date: "2025",
-        type: "Technical",
-        skillImproved: "Practical software problem-solving",
-        proof: "Applied teamwork and competitive development skills in a live technical setting.",
-        file: "/certificates/cer5.jpeg",
-      },
-      {
-        title: "Canvas App in Power Platform",
-        issuer: "Microsoft",
-        date: "2026",
-        type: "Technical",
-        skillImproved: "Low-code application development",
-        proof: "Learned how to design and manage application workflows inside the Power Platform ecosystem.",
-        file: "/certificates/cer6.jpeg",
-      },
-      {
-        title: "Manage Canvas App in Power Platform",
-        issuer: "Microsoft",
-        date: "2026",
-        type: "Technical",
-        skillImproved: "Application management",
-        proof: "Strengthened understanding of maintaining and organizing app experiences within Power Platform.",
-        file: "/certificates/cer7.jpeg",
-      },
+      
+      
     ],
     []
   );
@@ -120,8 +77,8 @@ export default function Certificates() {
   return (
     <section id="certificates" className="section-shell overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[8%] top-20 h-52 w-52 rounded-full bg-[#7cc7c1]/10 blur-3xl" />
-        <div className="absolute right-[10%] top-10 h-56 w-56 rounded-full bg-[#d6b07c]/10 blur-3xl" />
+        <div className="absolute left-[8%] top-20 h-52 w-52 rounded-full bg-[#7fd6c2]/12 blur-3xl" />
+        <div className="absolute right-[10%] top-10 h-56 w-56 rounded-full bg-[#f26b4c]/12 blur-3xl" />
       </div>
 
       <div className="section-inner">
@@ -135,15 +92,15 @@ export default function Certificates() {
           <div>
             <div className="section-kicker">
               <FiAward />
-              Verified Learning
+              Certificates
             </div>
-            <h2 className="section-title mt-7">Certificates presented as stronger supporting evidence.</h2>
+            <h2 className="section-title mt-7">Certificates</h2>
           </div>
 
           <p className="section-copy max-w-none xl:pt-14">
-            These certificates show continued learning across programming,
-            academic development, and supporting technical tools. The new layout
-            makes it easier to browse, filter, and preview proof.
+            These certificates reflect continued learning across programming,
+            academic development, and supporting tools. They also give quick,
+            browsable proof behind the growth shown elsewhere in the portfolio.
           </p>
         </motion.div>
 
@@ -152,7 +109,7 @@ export default function Certificates() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="lux-panel mt-12 rounded-[34px] p-5"
+          className="lux-panel mt-10 rounded-[34px] p-5"
         >
           <div className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
             <div className="relative">
@@ -193,6 +150,21 @@ export default function Certificates() {
           </div>
         </motion.div>
 
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          {[
+            { label: "Certificates", value: `${filtered.length}` },
+            { label: "Primary Type", value: "Technical" },
+            { label: "Review Style", value: "Preview + proof" },
+          ].map((item) => (
+            <div key={item.label} className="lux-panel-soft rounded-[28px] px-5 py-5">
+              <div className="display-font text-2xl text-white">{item.value}</div>
+              <div className="mt-2 text-xs uppercase tracking-[0.22em] text-white/44">
+                {item.label}
+              </div>
+            </div>
+          ))}
+        </div>
+
         <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((cert, index) => {
             const pdf = isPdf(cert.file);
@@ -211,9 +183,9 @@ export default function Certificates() {
               >
                 <div className="relative h-52 w-full overflow-hidden">
                   {pdf ? (
-                    <div className="absolute inset-0 flex items-center justify-center bg-[linear-gradient(135deg,rgba(214,176,124,0.16),rgba(124,199,193,0.08))]">
+                    <div className="absolute inset-0 flex items-center justify-center bg-[linear-gradient(135deg,rgba(242,107,76,0.16),rgba(127,214,194,0.1))]">
                       <div className="flex flex-col items-center gap-3">
-                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[rgba(214,176,124,0.24)] bg-black/18 text-[#f0d4a8]">
+                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[rgba(242,107,76,0.24)] bg-black/18 text-[#ff9a76]">
                           <FiFileText size={22} />
                         </div>
                         <div className="text-sm uppercase tracking-[0.2em] text-white/68">PDF Preview</div>
@@ -239,10 +211,10 @@ export default function Certificates() {
 
                 <div className="p-5">
                   <div className="flex items-center justify-between gap-3">
-                    <span className="rounded-full border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-[#f0d4a8]">
+                    <span className="rounded-full border border-[rgba(242,107,76,0.24)] bg-[rgba(242,107,76,0.12)] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-[#ff9a76]">
                       {cert.type}
                     </span>
-                    <span className="text-xs uppercase tracking-[0.18em] text-white/38 group-hover:text-[#7cc7c1]">
+                    <span className="text-xs uppercase tracking-[0.18em] text-white/38 group-hover:text-[#7fd6c2]">
                       View Proof
                     </span>
                   </div>
@@ -351,7 +323,7 @@ export default function Certificates() {
 
                 <div className="p-6 md:p-7">
                   <div className="flex flex-wrap gap-2">
-                    <span className="rounded-full border border-[rgba(214,176,124,0.24)] bg-[rgba(214,176,124,0.08)] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-[#f0d4a8]">
+                    <span className="rounded-full border border-[rgba(242,107,76,0.24)] bg-[rgba(242,107,76,0.12)] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-[#ff9a76]">
                       {open.type}
                     </span>
                     <span className="rounded-full border border-white/10 bg-black/18 px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-white/56">
