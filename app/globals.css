@@ -1,0 +1,364 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d1113;
+  --foreground: #f7efe3;
+  --muted: rgba(234, 220, 201, 0.72);
+  --line: rgba(255, 241, 222, 0.1);
+  --line-strong: rgba(242, 107, 76, 0.28);
+  --panel: rgba(19, 24, 28, 0.9);
+  --panel-strong: rgba(16, 19, 22, 0.96);
+  --surface: rgba(30, 36, 41, 0.76);
+  --surface-strong: rgba(22, 27, 31, 0.92);
+  --accent: #f26b4c;
+  --accent-strong: #ff9a76;
+  --accent-cool: #7fd6c2;
+  --accent-soft: #ffd7a3;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
+  --font-sans-stack: "Avenir Next", "Segoe UI", "Helvetica Neue", "Trebuchet MS",
+    sans-serif;
+  --font-display-stack: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+    Georgia, serif;
+  --font-mono-stack: "SFMono-Regular", "JetBrains Mono", Consolas, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans-stack);
+  --font-mono: var(--font-mono-stack);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(242, 107, 76, 0.12), transparent 24%),
+    radial-gradient(circle at 88% 12%, rgba(127, 214, 194, 0.1), transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(255, 215, 163, 0.06), transparent 28%),
+    linear-gradient(180deg, #101517 0%, #090c0f 100%);
+  background-color: var(--background);
+  color-scheme: dark;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(242, 107, 76, 0.12), transparent 18%),
+    radial-gradient(circle at 88% 14%, rgba(127, 214, 194, 0.08), transparent 16%),
+    radial-gradient(circle at 50% 100%, rgba(255, 215, 163, 0.05), transparent 24%),
+    linear-gradient(180deg, #101517 0%, #090c0f 100%);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans-stack);
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.01em;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body::before {
+  z-index: -2;
+  background:
+    linear-gradient(rgba(255, 245, 232, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 245, 232, 0.018) 1px, transparent 1px);
+  background-size: 96px 96px;
+  mask-image: radial-gradient(circle at center, black 44%, transparent 86%);
+  opacity: 0.24;
+}
+
+body::after {
+  z-index: -3;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.016), transparent 36%),
+    radial-gradient(circle at top left, rgba(242, 107, 76, 0.05), transparent 30%),
+    radial-gradient(circle at 85% 18%, rgba(127, 214, 194, 0.05), transparent 24%);
+}
+
+a,
+button,
+input,
+textarea {
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+::selection {
+  background: rgba(242, 107, 76, 0.36);
+  color: #fff7ee;
+}
+
+main {
+  position: relative;
+  isolation: isolate;
+}
+
+section[id] {
+  scroll-margin-top: 6.5rem;
+}
+
+.page-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(242, 107, 76, 0.08), transparent 18%),
+    radial-gradient(circle at 88% 14%, rgba(127, 214, 194, 0.06), transparent 16%);
+}
+
+.page-shell {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.section-shell {
+  position: relative;
+  padding: 5rem 1.5rem;
+}
+
+.section-inner {
+  position: relative;
+  margin-inline: auto;
+  max-width: 72rem;
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 235, 208, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(242, 107, 76, 0.1),
+    rgba(255, 215, 163, 0.08) 50%,
+    rgba(127, 214, 194, 0.08)
+  );
+  padding: 0.72rem 1rem;
+  color: rgba(251, 240, 224, 0.92);
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.section-title {
+  font-family: var(--font-display-stack);
+  font-size: clamp(2.9rem, 7vw, 5.6rem);
+  line-height: 0.93;
+  letter-spacing: -0.045em;
+  color: #fbf3e7;
+  text-wrap: balance;
+}
+
+.section-copy {
+  max-width: 48rem;
+  color: var(--muted);
+  line-height: 1.82;
+  font-size: 1.02rem;
+}
+
+.section-rule {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(242, 107, 76, 0.28) 34%,
+    rgba(127, 214, 194, 0.2) 66%,
+    transparent 100%
+  );
+}
+
+.lux-panel {
+  background:
+    radial-gradient(circle at top left, rgba(242, 107, 76, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(23, 29, 33, 0.96), rgba(14, 18, 21, 0.96));
+  border: 1px solid rgba(255, 241, 222, 0.08);
+  box-shadow:
+    var(--shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px) saturate(120%);
+}
+
+.lux-panel-soft {
+  background:
+    radial-gradient(circle at top left, rgba(255, 215, 163, 0.06), transparent 30%),
+    linear-gradient(180deg, rgba(27, 32, 36, 0.92), rgba(17, 21, 24, 0.94));
+  border: 1px solid rgba(255, 241, 222, 0.08);
+  box-shadow:
+    var(--shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(22px) saturate(120%);
+}
+
+.lux-button-primary,
+.lux-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  border-radius: 999px;
+  padding: 0.92rem 1.35rem;
+  font-weight: 700;
+}
+
+.lux-button-primary {
+  background: linear-gradient(135deg, rgba(242, 107, 76, 0.94), rgba(255, 154, 118, 0.96));
+  color: #fff8f2;
+  box-shadow: 0 16px 34px rgba(140, 61, 39, 0.28);
+}
+
+.lux-button-secondary {
+  border: 1px solid rgba(255, 240, 221, 0.12);
+  background: rgba(255, 250, 243, 0.035);
+  color: #f9f0e2;
+}
+
+.lux-button-primary:hover,
+.lux-button-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.lux-button-secondary:hover {
+  border-color: rgba(127, 214, 194, 0.3);
+  background: rgba(127, 214, 194, 0.08);
+}
+
+.lux-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 241, 222, 0.08);
+  background: rgba(255, 248, 240, 0.03);
+  padding: 0.6rem 1rem;
+  color: rgba(247, 239, 227, 0.82);
+}
+
+.lux-chip-active {
+  border-color: rgba(242, 107, 76, 0.22);
+  background: rgba(242, 107, 76, 0.12);
+  color: var(--accent-soft);
+}
+
+.lux-input {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(15, 19, 22, 0.88);
+  color: #f7efe3;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.lux-input::placeholder {
+  color: rgba(235, 219, 199, 0.34);
+}
+
+.lux-input:focus {
+  outline: none;
+  border-color: rgba(242, 107, 76, 0.34);
+  box-shadow: 0 0 0 4px rgba(242, 107, 76, 0.1);
+}
+
+.text-glow {
+  text-shadow: none;
+}
+
+.display-font {
+  font-family: var(--font-display-stack);
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
+
+[class~="bg-white/[0.03]"] {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+[class~="bg-white/4"] {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+[class~="bg-black/18"] {
+  background: rgba(7, 9, 17, 0.82) !important;
+}
+
+[class~="bg-black/20"] {
+  background: rgba(7, 9, 17, 0.88) !important;
+}
+
+[class~="text-white/34"] {
+  color: rgba(255, 255, 255, 0.54) !important;
+}
+
+[class~="text-white/38"] {
+  color: rgba(255, 255, 255, 0.58) !important;
+}
+
+[class~="text-white/40"] {
+  color: rgba(255, 255, 255, 0.62) !important;
+}
+
+[class~="text-white/42"] {
+  color: rgba(255, 255, 255, 0.64) !important;
+}
+
+[class~="text-white/44"] {
+  color: rgba(255, 255, 255, 0.66) !important;
+}
+
+[class~="text-white/45"] {
+  color: rgba(255, 255, 255, 0.68) !important;
+}
+
+[class~="text-white/46"] {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[class~="text-white/48"] {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+[class~="text-white/50"] {
+  color: rgba(255, 255, 255, 0.74) !important;
+}
+
+[class~="text-white/52"] {
+  color: rgba(255, 255, 255, 0.76) !important;
+}
+
+[class~="text-white/54"] {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+[class~="text-white/56"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-block: 5.5rem;
+  }
+}

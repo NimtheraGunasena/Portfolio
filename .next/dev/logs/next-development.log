@@ -1,0 +1,4122 @@
+[00:00:02.157] Server  LOG     ✓ Ready in 1947ms
+[00:00:09.138] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.064] Browser WARN    Image with src "/Uchith.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer2.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer3.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer4.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer5.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer6.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.064] Browser WARN    Image with src "/certificates/cer7.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.663] Server  LOG     ✓ Compiled in 0ms
+[00:12:55.879] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.881] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.882] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.882] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.884] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.885] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.888] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.890] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.895] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.897] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.898] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.899] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.900] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.901] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.901] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.902] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.903] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.903] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.904] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.905] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.906] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.907] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.912] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.917] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.919] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.920] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.922] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.924] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.928] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.930] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.931] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.932] Server  ERROR   ⨯ ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:55.933] Server  LOG     ✓ Compiled in 171ms
+[00:13:06.112] Browser ERROR   ./src/components/Navbar.tsx:6:1
+Module not found: Can't resolve './Logo'
+  4 | import { FaMoon, FaSun } from "react-icons/fa";
+  5 | import { FiBookOpen } from "react-icons/fi";
+> 6 | import Logo from "./Logo";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Navbar() {
+  9 |   const [scrolled, setScrolled] = useState(false);
+
+Import trace:
+  Server Component:
+    ./src/components/Navbar.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:27.511] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.511] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.537] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.538] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.538] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.538] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.539] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.539] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.540] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.540] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.540] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.541] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.541] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.541] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.542] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.542] Server  ERROR   ⨯ ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:27.569] Server  LOG     ✓ Compiled in 64ms
+[00:13:50.920] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.925] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.962] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.963] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.963] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.964] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.964] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.966] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.966] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.966] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.967] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.967] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.974] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.974] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.975] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:50.975] Server  ERROR   ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:51.005] Server  LOG     ✓ Compiled in 138ms
+[00:14:48.699] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve '@/src/components/Navbar'
+  1 | import Contact from "@/src/components/Contact";
+  2 | import Hero from "@/src/components/Hero";
+> 3 | import Navbar from "@/src/components/Navbar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+
+Import map: aliased to relative './src/components/Navbar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:48.701] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve '@/src/components/Hero'
+  1 | import Contact from "@/src/components/Contact";
+> 2 | import Hero from "@/src/components/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+
+Import map: aliased to relative './src/components/Hero' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:49.700] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.702] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.749] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.749] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.750] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.751] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.751] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.753] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.757] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.759] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.759] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.760] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.760] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.761] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.762] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.763] Server  ERROR   ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:49.783] Server  LOG     ✓ Compiled in 193ms
+[00:14:49.889] Browser ERROR   ./app/page.tsx:5:1
+Module not found: Can't resolve '@/src/components/About'
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+> 5 | import About from "@/src/components/About";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+
+Import map: aliased to relative './src/components/About' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:15:54.550] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.550] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.571] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.571] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.572] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.572] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.573] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.573] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.574] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.574] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.574] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.575] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.575] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.577] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.578] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.578] Server  ERROR   ⨯ ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.602] Server  LOG     ✓ Compiled in 68ms
+[00:16:04.975] Browser ERROR   ./app/page.tsx:6:1
+Module not found: Can't resolve '@/src/components/Projects'
+  4 | import Skills from "@/src/components/Skills";
+  5 | import About from "@/src/components/About";
+> 6 | import Projects from "@/src/components/Projects";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Footer from "@/src/components/Footer";
+  8 |
+  9 | // Academic Components (you will create these)
+
+Import map: aliased to relative './src/components/Projects' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:22.049] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.050] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.081] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.082] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.082] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.082] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.083] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.083] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.084] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.084] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.085] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.085] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.087] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.088] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.088] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.089] Server  ERROR   ⨯ ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:22.112] Server  LOG     ✓ Compiled in 75ms
+[00:18:32.700] Server  LOG     ✓ Compiled in 212ms
+[00:18:37.577] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.580] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.610] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.610] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.611] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.611] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.612] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.612] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.612] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.613] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.613] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.613] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.614] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.615] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.648] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.650] Server  ERROR   ⨯ ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:37.651] Server  LOG     ✓ Compiled in 110ms
+[00:19:34.947] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.947] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.971] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.972] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.972] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.973] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.973] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.974] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.974] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.975] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.976] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.978] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.979] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.979] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.980] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:34.980] Server  ERROR   ⨯ ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:19:35.002] Server  LOG     ✓ Compiled in 80ms
+[00:20:13.743] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.747] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.773] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.774] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.774] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.775] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.776] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.777] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.777] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.777] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.778] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.780] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.783] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.783] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.783] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.784] Server  ERROR   ⨯ ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:13.805] Server  LOG     ✓ Compiled in 87ms
+[00:21:29.334] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.334] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.351] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.351] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.352] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.352] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.352] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.353] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.353] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.355] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.356] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.356] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.357] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.357] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.357] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.358] Server  ERROR   ⨯ ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:29.382] Server  LOG     ✓ Compiled in 74ms
+[00:22:02.732] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.733] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.767] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.767] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.768] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.768] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.771] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.772] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.772] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.774] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.778] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.779] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.780] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.781] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.781] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.782] Server  ERROR   ⨯ ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:02.798] Server  LOG     ✓ Compiled in 90ms
+[00:22:46.597] Browser ERROR   ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:46.598] Browser ERROR   ./app/page.tsx:4:1
+Module not found: Can't resolve '@/src/components/Skills'
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+> 4 | import Skills from "@/src/components/Skills";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import About from "@/src/components/About";
+  6 | import Projects from "@/src/components/Projects";
+  7 | import Footer from "@/src/components/Footer";
+
+Import map: aliased to relative './src/components/Skills' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:46.598] Browser ERROR   ./app/page.tsx:10:1
+Module not found: Can't resolve '@/src/components/academic/ReflectiveJournal'
+   8 |
+   9 | // Academic Components (you will create these)
+> 10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+
+Import map: aliased to relative './src/components/academic/ReflectiveJournal' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:46.598] Browser ERROR   ./app/page.tsx:11:1
+Module not found: Can't resolve '@/src/components/academic/CareerPlan'
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+> 11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import Certificates from "@/src/components/academic/Certificates";
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+
+Import map: aliased to relative './src/components/academic/CareerPlan' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:46.598] Browser ERROR   ./app/page.tsx:12:1
+Module not found: Can't resolve '@/src/components/academic/Certificates'
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+> 12 | import Certificates from "@/src/components/academic/Certificates";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import CVSection from "@/src/components/academic/CVSection";
+  14 |
+  15 | export default function Home() {
+
+Import map: aliased to relative './src/components/academic/Certificates' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:46.598] Browser ERROR   ./app/page.tsx:13:1
+Module not found: Can't resolve '@/src/components/academic/CVSection'
+  11 | import CareerPlan from "@/src/components/academic/CareerPlan";
+  12 | import Certificates from "@/src/components/academic/Certificates";
+> 13 | import CVSection from "@/src/components/academic/CVSection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | export default function Home() {
+  16 |   return (
+
+Import map: aliased to relative './src/components/academic/CVSection' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:46.598] Browser ERROR   ./app/page.tsx:1:1
+Module not found: Can't resolve '@/src/components/Contact'
+> 1 | import Contact from "@/src/components/Contact";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Hero from "@/src/components/Hero";
+  3 | import Navbar from "@/src/components/Navbar";
+  4 | import Skills from "@/src/components/Skills";
+
+Import map: aliased to relative './src/components/Contact' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:47.369] Server  LOG     ✓ Compiled in 299ms
+[00:22:50.795] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.796] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.797] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.797] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.797] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.797] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.798] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.798] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.799] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.799] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.800] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.803] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.805] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.806] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:50.930] Browser ERROR   ./app/page.tsx:7:1
+Module not found: Can't resolve '@/src/components/Footer'
+   5 | import About from "@/src/components/About";
+   6 | import Projects from "@/src/components/Projects";
+>  7 | import Footer from "@/src/components/Footer";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | // Academic Components (you will create these)
+  10 | import ReflectiveJournal from "@/src/components/academic/ReflectiveJournal";
+
+Import map: aliased to relative './src/components/Footer' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:13.696] Server  LOG     ✓ Compiled in 165ms
+[00:27:17.895] Server  LOG     ✓ Compiled in 150ms
+[00:27:21.875] Server  LOG     ✓ Compiled in 483ms
+[00:27:27.106] Server  LOG     ✓ Compiled in 513ms
+[00:28:35.283] Server  LOG     ✓ Compiled in 87ms
+[00:28:38.282] Server  LOG     ✓ Compiled in 24ms
+[00:28:45.647] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:45.999] Browser WARN    Image with src "/Uchith.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:05.925] Browser WARN    Image with src "/certificates/cer2.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:05.925] Browser WARN    Image with src "/certificates/cer3.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:05.925] Browser WARN    Image with src "/certificates/cer1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:06.082] Browser WARN    Image with src "/certificates/cer4.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:06.082] Browser WARN    Image with src "/certificates/cer6.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:06.082] Browser WARN    Image with src "/certificates/cer5.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:06.212] Browser WARN    Image with src "/certificates/cer7.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:20.274] Server  LOG     ✓ Compiled in 58ms
+[00:30:28.540] Server  LOG     ✓ Compiled in 30ms
+[00:30:29.655] Server  LOG     ✓ Compiled in 20ms
+[00:30:34.184] Server  LOG     ✓ Compiled in 30ms
+[00:30:38.539] Server  LOG     ✓ Compiled in 22ms
+[00:30:40.250] Server  LOG     ✓ Compiled in 28ms
+[00:30:54.787] Server  LOG     ✓ Compiled in 28ms
+[00:31:07.162] Server  LOG     ✓ Compiled in 51ms
+[00:31:08.994] Server  LOG     ✓ Compiled in 23ms
+[00:31:42.747] Server  LOG     ✓ Compiled in 201ms
+[00:32:02.183] Server  LOG     ✓ Compiled in 40ms
+[00:32:07.362] Server  LOG     ✓ Compiled in 29ms
+[00:32:13.604] Server  LOG     ✓ Compiled in 41ms
+[00:32:19.697] Server  LOG     ✓ Compiled in 26ms
+[00:32:27.479] Server  LOG     ✓ Compiled in 61ms
+[00:32:41.113] Server  LOG     ✓ Compiled in 137ms
+[00:32:51.675] Server  LOG     ✓ Compiled in 45ms
+[00:32:53.650] Server  LOG     ✓ Compiled in 89ms
+[00:33:10.854] Server  LOG     ✓ Compiled in 51ms
+[00:37:04.361] Server  LOG     ✓ Compiled in 162ms
+[00:37:15.459] Server  LOG     ✓ Compiled in 47ms
+[00:39:47.737] Server  LOG     ✓ Compiled in 141ms
+[00:39:48.986] Server  LOG     ✓ Compiled in 38ms
+[00:40:09.480] Server  LOG     ✓ Compiled in 46ms
+[00:40:10.341] Browser WARN    Image with src "/image-2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:11.094] Server  LOG     ✓ Compiled in 24ms
+[00:40:12.645] Server  LOG     ✓ Compiled in 23ms
+[00:40:14.787] Server  LOG     ✓ Compiled in 20ms
+[00:40:20.580] Server  LOG     ✓ Compiled in 30ms
+[00:42:22.210] Server  LOG     ✓ Compiled in 148ms
+[00:42:25.299] Server  LOG     ✓ Compiled in 23ms
+[00:42:28.979] Server  LOG     ✓ Compiled in 39ms
+[00:42:30.999] Server  LOG     ✓ Compiled in 26ms
+[00:43:00.695] Server  LOG     ✓ Compiled in 40ms
+[00:43:26.517] Server  LOG     ✓ Compiled in 31ms
+[00:43:28.656] Server  LOG     ✓ Compiled in 47ms
+[00:43:45.360] Server  LOG     ✓ Compiled in 32ms
+[00:45:01.221] Server  LOG     ✓ Compiled in 46ms
+[00:45:02.897] Server  LOG     ✓ Compiled in 28ms
+[00:45:32.103] Server  LOG     ✓ Compiled in 33ms
+[00:45:34.213] Server  LOG     ✓ Compiled in 22ms
+[00:45:40.875] Server  LOG     ✓ Compiled in 37ms
+[00:45:42.044] Server  LOG     ✓ Compiled in 25ms
+[00:52:50.401] Server  LOG     ✓ Compiled in 123ms
+[00:52:54.769] Server  LOG     ✓ Compiled in 176ms
+[00:52:55.340] Browser ERROR   ./src/components/About.tsx:85:7
+Parsing ecmascript source code failed
+  83 |       },
+  84 |       {}
+> 85 |       {
+     |       ^
+  86 |         title: "Applied Project Development",
+  87 |         org: "Coursework and Self-Directed Practice",
+  88 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:52:56.340] Browser ERROR   ./src/components/About.tsx:87:7
+Parsing ecmascript source code failed
+  85 |         
+  86 |       }
+> 87 |       {
+     |       ^
+  88 |         title: "Applied Project Development",
+  89 |         org: "Coursework and Self-Directed Practice",
+  90 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:52:59.226] Server  LOG     ✓ Compiled in 22ms
+[00:52:59.340] Browser ERROR   ./src/components/About.tsx:85:12
+Parsing ecmascript source code failed
+  83 |       },
+  84 |       {
+> 85 |         IT Consultant - Software Engineering
+     |            ^^^^^^^^^^
+  86 |       }
+  87 |       {
+  88 |         title: "Applied Project Development",
+
+Unexpected token `ident`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:53:04.341] Browser ERROR   ./src/components/About.tsx:85:12
+Parsing ecmascript source code failed
+  83 |       },
+  84 |       {
+> 85 |         IT Consultant - Software Engineering
+     |            ^^^^^^^^^^
+  86 |       },
+  87 |       {
+  88 |         title: "Applied Project Development",
+
+Unexpected token `ident`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:53:07.345] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:53:09.857] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:53:09.878] Server  LOG     ✓ Compiled in 25ms
+[00:53:10.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:08.776] Server  LOG     ✓ Compiled in 153ms
+[00:54:11.449] Server  LOG     ✓ Compiled in 47ms
+[00:54:14.815] Server  LOG     ✓ Compiled in 34ms
+[00:54:16.717] Server  LOG     ✓ Compiled in 25ms
+[00:54:18.078] Server  LOG     ✓ Compiled in 26ms
+[00:54:19.814] Server  LOG     ✓ Compiled in 25ms
+[00:54:29.793] Server  LOG     ✓ Compiled in 44ms
+[00:54:32.857] Server  LOG     ✓ Compiled in 19ms
+[00:54:37.517] Server  LOG     ✓ Compiled in 28ms
+[00:54:38.759] Server  LOG     ✓ Compiled in 25ms
+[00:54:40.969] Server  LOG     ✓ Compiled in 17ms
+[00:55:11.686] Server  LOG     ✓ Compiled in 71ms
+[00:55:12.342] Browser ERROR   ./src/components/About.tsx:87:17
+Parsing ecmascript source code failed
+  85 |         title: "IT Consultant - Software Engineering",
+  86 |         org: "Gennext(pvt)ltd",
+> 87 |         period: "2026,
+     |                 ^^^^^^
+  88 |         points: [
+  89 |           "Provided technical support and consulting services to various clients.",
+  90 |           "Collaborated with cross-functional teams to deliver software solutions.",
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:55:16.601] Server  LOG     ✓ Compiled in 59ms
+[00:55:21.512] Server  LOG     ✓ Compiled in 25ms
+[00:55:28.148] Server  LOG     ✓ Compiled in 42ms
+[00:55:28.342] Browser ERROR   ./src/components/About.tsx:87:23
+Parsing ecmascript source code failed
+  85 |         title: "IT Consultant - Software Engineering",
+  86 |         org: "Gennext(pvt)ltd",
+> 87 |         period: "2026"",
+     |                       ^^
+  88 |         points: [
+  89 |           "Provided technical support and consulting services to various clients.",
+  90 |           "Collaborated with cross-functional teams to deliver software solutions.",
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:55:36.642] Server  LOG     ✓ Compiled in 57ms
+[00:55:37.342] Browser ERROR   ./src/components/About.tsx:89:20
+Parsing ecmascript source code failed
+  87 |         period: "2026",
+  88 |         points: [
+> 89 |           Provided end-to-end IT consulting in software engineering, including requirementsanalysis, system design, and solution architecture across multiple projects.Led development and implementation of scalable applications using modernframeworks, improving performance, reliability, and maintainability.Collaborated with cross-functional teams to translate business needs intotechnical solutions, ensuring alignment with client objectives
+     |                    ^^^
+  90 |         ],
+  91 |       },
+  92 |       {
+
+Expected ',', got 'ident'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:55:40.341] Browser ERROR   ./src/components/About.tsx:90:20
+Parsing ecmascript source code failed
+  88 |         period: "2026",
+  89 |         points: [
+> 90 |           Provided end-to-end IT consulting in software engineering, including requirementsanalysis, system design, and solution architecture across multiple projects.Led development and implementation of scalable applications using modernframeworks, improving performance, reliability, and maintainability.Collaborated with cross-functional teams to translate business needs intotechnical solutions, ensuring alignment with client objectives
+     |                    ^^^
+  91 |         ],
+  92 |       },
+  93 |       {
+
+Expected ',', got 'ident'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:55:49.981] Server  LOG     ✓ Compiled in 36ms
+[00:56:05.256] Server  LOG     ✓ Compiled in 35ms
+[00:56:16.898] Server  LOG     ✓ Compiled in 47ms
+[00:56:18.669] Server  LOG     ✓ Compiled in 36ms
+[00:56:19.342] Browser ERROR   ./src/components/About.tsx:96:7
+Parsing ecmascript source code failed
+  94 |         
+  95 |       }
+> 96 |       {
+     |       ^
+  97 |         title: "Applied Project Development",
+  98 |         org: "Coursework and Self-Directed Practice",
+  99 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:56:26.641] Server  LOG     ✓ Compiled in 52ms
+[00:56:27.341] Browser ERROR   ./src/components/About.tsx:95:7
+Parsing ecmascript source code failed
+  93 |       {
+  94 |         title:
+> 95 |       }
+     |       ^
+  96 |       {
+  97 |         title: "Applied Project Development",
+  98 |         org: "Coursework and Self-Directed Practice",
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:56:53.721] Server  LOG     ✓ Compiled in 43ms
+[00:56:54.343] Browser ERROR   ./src/components/About.tsx:94:22
+Parsing ecmascript source code failed
+  92 |       },
+  93 |       {
+> 94 |         title:Junior Consultant - (Software Development + Project Management)
+     |                      ^^^^^^^^^^
+  95 |       }
+  96 |       {
+  97 |         title: "Applied Project Development",
+
+Expected ',', got 'ident'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:56:58.856] Server  LOG     ✓ Compiled in 49ms
+[00:56:59.341] Browser ERROR   ./src/components/About.tsx:96:7
+Parsing ecmascript source code failed
+  94 |         title: "Junior Consultant - (Software Development + Project Management)",
+  95 |       }
+> 96 |       {
+     |       ^
+  97 |         title: "Applied Project Development",
+  98 |         org: "Coursework and Self-Directed Practice",
+  99 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:57:06.341] Browser ERROR   ./src/components/About.tsx:97:7
+Parsing ecmascript source code failed
+   95 |         
+   96 |       }
+>  97 |       {
+      |       ^
+   98 |         title: "Applied Project Development",
+   99 |         org: "Coursework and Self-Directed Practice",
+  100 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:57:10.340] Browser ERROR   ./src/components/About.tsx:97:7
+Parsing ecmascript source code failed
+   95 |         org: "Gennext(pvt)ltd",
+   96 |       }
+>  97 |       {
+      |       ^
+   98 |         title: "Applied Project Development",
+   99 |         org: "Coursework and Self-Directed Practice",
+  100 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:57:12.340] Browser ERROR   ./src/components/About.tsx:102:7
+Parsing ecmascript source code failed
+  100 |         ],
+  101 |       }
+> 102 |       {
+      |       ^
+  103 |         title: "Applied Project Development",
+  104 |         org: "Coursework and Self-Directed Practice",
+  105 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:57:18.163] Server  LOG     ✓ Compiled in 45ms
+[00:57:53.162] Server  LOG     ✓ Compiled in 114ms
+[00:57:56.543] Server  LOG     ✓ Compiled in 34ms
+[00:57:57.561] Server  LOG     ✓ Compiled in 24ms
+[00:58:00.874] Server  LOG     ✓ Compiled in 28ms
+[00:58:03.790] Server  LOG     ✓ Compiled in 24ms
+[00:58:04.926] Server  LOG     ✓ Compiled in 21ms
+[00:58:06.714] Server  LOG     ✓ Compiled in 26ms
+[00:58:18.751] Server  LOG     ✓ Compiled in 37ms
+[00:58:19.806] Server  LOG     ✓ Compiled in 24ms
+[00:58:54.164] Server  LOG     ✓ Compiled in 60ms
+[00:58:54.340] Browser ERROR   ./src/components/About.tsx:105:7
+Parsing ecmascript source code failed
+  103 |         
+  104 |       }
+> 105 |       {
+      |       ^
+  106 |         title: "Applied Project Development",
+  107 |         org: "Coursework and Self-Directed Practice",
+  108 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:58:58.519] Server  LOG     ✓ Compiled in 26ms
+[00:58:59.342] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:59:01.694] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:59:01.716] Server  LOG     ✓ Compiled in 26ms
+[00:59:02.087] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[00:59:02.258] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:03.246] Server  LOG     ✓ Compiled in 38ms
+[00:59:04.341] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:59:04.341] Browser ERROR   ./src/components/About.tsx:103:14
+Parsing ecmascript source code failed
+  101 |       },
+  102 |       {
+> 103 |         2022 – 2023 National Water Supply & Drainage Board
+      |              ^^^
+  104 | Personal Secretory Trainee  - IT sectionWorked well with Microsoft Word , PowerPoint ,Excel & Canva  & IT documentationsManaged paper works Managed small projects -  Underground watersupply project
+  105 | ITIL Cretification - Reading
+  106 |
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:59:04.341] Browser ERROR   ./src/components/About.tsx:103:14
+Parsing ecmascript source code failed
+  101 |       },
+  102 |       {
+> 103 |         2022 – 2023 National Water Supply & Drainage Board
+      |              ^
+  104 | Personal Secretory Trainee  - IT sectionWorked well with Microsoft Word , PowerPoint ,Excel & Canva  & IT documentationsManaged paper works Managed small projects -  Underground watersupply project
+  105 | ITIL Cretification - Reading
+  106 |
+
+Unexpected character '–'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:59:12.341] Browser ERROR   ./src/components/About.tsx:103:14
+Parsing ecmascript source code failed
+  101 |       },
+  102 |       {
+> 103 |         2022 – Secretory National Water Supply & Drainage Board
+      |              ^^^
+  104 | Personal Secretory Trainee  - IT sectionWorked well with Microsoft Word , PowerPoint ,Excel & Canva  & IT documentationsManaged paper works Managed small projects -  Underground watersupply project
+  105 | ITIL Cretification - Reading
+  106 |
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:59:12.341] Browser ERROR   ./src/components/About.tsx:103:14
+Parsing ecmascript source code failed
+  101 |       },
+  102 |       {
+> 103 |         2022 – Secretory National Water Supply & Drainage Board
+      |              ^
+  104 | Personal Secretory Trainee  - IT sectionWorked well with Microsoft Word , PowerPoint ,Excel & Canva  & IT documentationsManaged paper works Managed small projects -  Underground watersupply project
+  105 | ITIL Cretification - Reading
+  106 |
+
+Unexpected character '–'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:59:14.742] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:59:14.762] Server  LOG     ✓ Compiled in 42ms
+[00:59:15.333] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:23.947] Server  LOG     ✓ Compiled in 55ms
+[00:59:24.340] Browser ERROR   ./src/components/About.tsx:115:7
+Parsing ecmascript source code failed
+  113 |         
+  114 |       }
+> 115 |       {
+      |       ^
+  116 |         title: "Applied Project Development",
+  117 |         org: "Coursework and Self-Directed Practice",
+  118 |         period: "2024 - 2025",
+
+Expected ',', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[00:59:27.342] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:59:31.884] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:59:31.885] Server  LOG     ✓ Compiled in 365ms
+[00:59:32.436] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[00:59:32.447] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:59:32.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:33.086] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:15.377] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:15.503] Server  LOG     ✓ Compiled in 108ms
+[01:00:15.961] Server  ERROR   ⨯ ReferenceError: t is not defined
+[01:00:16.048] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:17.340] Browser ERROR   uncaughtError: ReferenceError: t is not defined
+[01:00:18.691] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:18.760] Server  LOG     ✓ Compiled in 25ms
+[01:00:19.030] Server  ERROR   ⨯ ReferenceError: title is not defined
+[01:00:19.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:20.340] Browser ERROR   uncaughtError: ReferenceError: title is not defined
+[01:00:21.306] Server  LOG     ✓ Compiled in 39ms
+[01:00:22.340] Browser ERROR   ./src/components/About.tsx:112:8
+Parsing ecmascript source code failed
+  110 |         ]
+  111 |       },
+> 112 |       {;
+      |        ^
+  113 |         title
+  114 |
+  115 |       },
+
+Unexpected token `;`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[01:00:22.665] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:22.849] Server  ERROR   ⨯ ReferenceError: title is not defined
+[01:00:22.940] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:23.340] Browser ERROR   uncaughtError: ReferenceError: title is not defined
+[01:00:25.948] Server  LOG     ✓ Compiled in 24ms
+[01:00:26.342] Browser ERROR   ./src/components/About.tsx:115:7
+Parsing ecmascript source code failed
+  113 |         title:
+  114 |
+> 115 |       },
+      |       ^
+  116 |       {
+  117 |         title: "Applied Project Development",
+  118 |         org: "Coursework and Self-Directed Practice",
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/components/About.tsx
+    ./app/page.tsx
+[01:00:29.334] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:29.702] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:29.802] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:30.343] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:32.267] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:32.342] Server  LOG     ✓ Compiled in 20ms
+[01:00:32.494] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:32.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:33.343] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:34.522] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:34.597] Server  LOG     ✓ Compiled in 22ms
+[01:00:34.745] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:34.819] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:35.341] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[01:00:37.090] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:37.110] Server  LOG     ✓ Compiled in 66ms
+[01:00:37.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:40.945] Browser WARN    Image with src "/image-2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:02:31.529] Server  LOG     ✓ Compiled in 66ms
+[01:02:35.584] Server  LOG     ✓ Compiled in 17ms
+[01:02:39.411] Server  LOG     ✓ Compiled in 26ms
+[01:03:09.587] Server  LOG     ✓ Compiled in 27ms
+[01:03:33.913] Server  LOG     ✓ Compiled in 60ms
+[01:03:34.341] Browser ERROR   ./src/components/Contact.tsx:34:70
+Parsing ecmascript source code failed
+  32 |       label: "LinkedIn",
+  33 |       value: "linkedin.com/in/nimthera-gunasena-742810252",
+> 34 |       href: "https://www.linkedin.com/in/nimthera-gunasena-742810252"",
+     |                                                                      ^^
+  35 |       icon: FiLinkedin,
+  36 |     },
+  37 |     {
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./src/components/Contact.tsx
+    ./app/page.tsx
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer3.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer2.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer5.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer4.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer6.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:03.313] Browser WARN    Image with src "/certificates/cer7.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:48.771] Server  LOG     ✓ Compiled in 203ms
+[01:06:12.952] Server  LOG     ✓ Compiled in 170ms
+[01:08:33.292] Server  LOG     ✓ Compiled in 239ms
+[01:08:34.296] Server  LOG     ✓ Compiled in 35ms
+[01:08:53.644] Server  LOG     ✓ Compiled in 149ms
